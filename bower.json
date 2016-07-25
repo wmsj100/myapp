@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "wmsj100 <wmsj100@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.4",
+    "bootstrap": "^3.3.6",
+    "requirejs": "^2.2.0"
+  }
+}
