@@ -1,4 +1,9 @@
 module.exports = function(app){
+
+    app.get('/test', function(req, res){
+        res.render('tests/index');
+    })
+
     app.get('/', function(req, res){
         var Mock = require("mockjs"),
                 data = null;
