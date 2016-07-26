@@ -1,3 +1,65 @@
-a{
-    color: palegreen;
+.clearfix {
+    display: block;
+    zoom: 1;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+div#topbar{
+    @topicon: 12px;
+    width: 100%;
+    background-color: #F1F1F1;
+
+    div.ct{
+        width: 1200px;
+        height: 30px;
+        margin: 0 auto;
+        div.menu{
+            margin-left: 30px;
+            ul{
+                .clearfix;
+                li{
+                    float: left;
+                    line-height: 30px;
+                    margin-right: 40px;
+                    position: relative;
+
+                    i{
+                        display: block;
+                        position: absolute;
+                        width: @topicon;
+                        height: @topicon;
+                        top: 10px;
+                        left: -15px;
+                        // border: solid 1px red;
+                    }
+                    &:nth-child(1) i{
+                        background: url(../img/common/sprite.png) -400px -84px no-repeat;
+                    }
+                    &:nth-child(2) i{
+                        background: url(../img/common/sprite.png) -436px -84px no-repeat;
+                    }
+                    &:nth-child(3) i{
+                        background: url(../img/common/sprite.png) -412px -84px no-repeat;
+                    }
+                    &:nth-child(4) i{
+                        background: url(../img/common/sprite.png) -424px -84px no-repeat;
+                    }
+                    a{
+                        color: #8D8D8D;
+                        &:hover{
+                            color: #FD2D63;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

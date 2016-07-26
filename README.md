@@ -20,3 +20,7 @@ http://requirejs.org/docs/optimization.html
 
 For more information on using requirejs:
 http://requirejs.org/docs/api.html
+
+建议：
+<!-- - 顶部条去除用户注册，功能合并到登陆功能中。 -->
+- 添加注册图标
