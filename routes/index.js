@@ -5,10 +5,8 @@ module.exports = function(app){
     })
 
     app.get('/', function(req, res){
-        var Mock = require("mockjs"),
-                data = null;
 
-        data = Mock.mock({
+        var data = {
             title: '婚淘淘',
             topbar: [{
                 value: "返回首页",
@@ -24,10 +22,10 @@ module.exports = function(app){
                 url: "/gw"
             }],
             mobile: {
-                apple: "@image('100x100')",
-                android: "@image('100x100')"
+                value: '手机版',
+                url: "#"
             }
-        });
+        };
 
         res.render('index', data);
     });
