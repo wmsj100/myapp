@@ -12,6 +12,8 @@
 }
 
 div#right_bar{
+    @imgSize: 35px;
+    @bgColor: #FF1004;
     width: 35px;
     height: 100%;
     position: fixed;
@@ -19,4 +21,36 @@ div#right_bar{
     right: 0;
     background-color: #000;
     color: red;
+
+    ul{
+        .clearfix;
+        position: relative;
+        top: 70%;
+        right: 0;
+        li{
+            float: left;
+            div.rightbar_img{
+                width: @imgSize;
+                height: @imgSize;
+            }
+            &:nth-child(1)>:first-child{
+                background: url(../img/common/sprite.png) -400px -140px no-repeat;
+                &:hover{
+                    background: url(../img/common/sprite.png) -400px -175px no-repeat;
+                }
+            }
+             &:nth-child(2)>:first-child{
+                background: url(../img/common/sprite.png) -400px -35px no-repeat;
+                &:hover{
+                    background: url(../img/common/sprite.png) -400px -70px no-repeat;
+                }
+            }
+             &:nth-child(3)>:first-child{
+                background: url(../img/common/sprite.png) -400px -0px no-repeat;
+                &:hover{
+                    background: url(../img/common/sprite.png) -400px -105px no-repeat;
+                }
+            }
+        }
+    }
 }

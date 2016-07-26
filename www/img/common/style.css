@@ -1,280 +1,295 @@
-good6 {
+#gopng_good5 {
 background: url(../img/common/sprite.png) -0px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-good4 {
+#gopng_good2 {
 background: url(../img/common/sprite.png) -120px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-good5 {
+#gopng_good4 {
 background: url(../img/common/sprite.png) -0px -80px no-repeat;
 height: 80px;
 width: 120px;
 }
-good2 {
+#gopng_good6 {
 background: url(../img/common/sprite.png) -120px -80px no-repeat;
 height: 80px;
 width: 120px;
 }
-good7 {
+#gopng_good7 {
 background: url(../img/common/sprite.png) -0px -160px no-repeat;
 height: 80px;
 width: 120px;
 }
-good8 {
+#gopng_good8 {
 background: url(../img/common/sprite.png) -120px -160px no-repeat;
 height: 80px;
 width: 120px;
 }
-good3 {
+#gopng_good3 {
 background: url(../img/common/sprite.png) -240px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-th {
+#gopng_th {
 background: url(../img/common/sprite.png) -240px -80px no-repeat;
 height: 68px;
 width: 70px;
 }
-logo {
+#gopng_logo {
 background: url(../img/common/sprite.png) -0px -240px no-repeat;
 height: 59px;
 width: 190px;
 }
-step {
+#gopng_step {
 background: url(../img/common/sprite.png) -0px -299px no-repeat;
 height: 46px;
 width: 336px;
 }
-nav30 {
+#gopng_nav70 {
 background: url(../img/common/sprite.png) -310px -80px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav70 {
+#gopng_nav50 {
 background: url(../img/common/sprite.png) -240px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav50 {
+#gopng_nav40 {
 background: url(../img/common/sprite.png) -280px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav40 {
+#gopng_nav3(1) {
 background: url(../img/common/sprite.png) -320px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav3(1) {
+#gopng_nav20 {
 background: url(../img/common/sprite.png) -240px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav20 {
+#gopng_nav10 {
 background: url(../img/common/sprite.png) -280px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav80 {
+#gopng_nav80 {
 background: url(../img/common/sprite.png) -320px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav1(1) {
+#gopng_nav1(1) {
 background: url(../img/common/sprite.png) -360px -0px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav1 {
+#gopng_nav30 {
 background: url(../img/common/sprite.png) -360px -40px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav2(1) {
+#gopng_nav2(1) {
 background: url(../img/common/sprite.png) -360px -80px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav2 {
+#gopng_nav2 {
 background: url(../img/common/sprite.png) -360px -120px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav3 {
+#gopng_nav3 {
 background: url(../img/common/sprite.png) -360px -160px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav4(1) {
+#gopng_nav4(1) {
 background: url(../img/common/sprite.png) -360px -200px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav4 {
+#gopng_nav4 {
 background: url(../img/common/sprite.png) -360px -240px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav5(1) {
+#gopng_nav5(1) {
 background: url(../img/common/sprite.png) -360px -280px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav5 {
+#gopng_nav5 {
 background: url(../img/common/sprite.png) -0px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav10 {
+#gopng_nav8 {
 background: url(../img/common/sprite.png) -40px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav7 {
+#gopng_nav7 {
 background: url(../img/common/sprite.png) -80px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-nav8 {
+#gopng_nav1 {
 background: url(../img/common/sprite.png) -120px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-arrow02 {
+#gopng_arrow02 {
 background: url(../img/common/sprite.png) -160px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow08 {
+#gopng_arrow01 {
 background: url(../img/common/sprite.png) -177px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow04 {
+#gopng_arrow03 {
 background: url(../img/common/sprite.png) -194px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow05 {
+#gopng_arrow04 {
 background: url(../img/common/sprite.png) -211px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow06 {
+#gopng_arrow05 {
 background: url(../img/common/sprite.png) -228px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow07 {
+#gopng_arrow06 {
 background: url(../img/common/sprite.png) -245px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow03 {
+#gopng_arrow07 {
 background: url(../img/common/sprite.png) -262px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-arrow01 {
+#gopng_arrow08 {
 background: url(../img/common/sprite.png) -279px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-nav6 {
+#gopng_nav6 {
 background: url(../img/common/sprite.png) -296px -345px no-repeat;
 height: 37px;
 width: 40px;
 }
-nav60 {
+#gopng_nav60 {
 background: url(../img/common/sprite.png) -336px -345px no-repeat;
 height: 37px;
 width: 40px;
 }
-TOP_01 {
+#gopng_TOP_01 {
 background: url(../img/common/sprite.png) -400px -0px no-repeat;
 height: 35px;
 width: 35px;
 }
-QQ2 {
+#gopng_erweima01 {
 background: url(../img/common/sprite.png) -400px -35px no-repeat;
 height: 35px;
 width: 35px;
 }
-erweima01 {
+#gopng_erweima02 {
 background: url(../img/common/sprite.png) -400px -70px no-repeat;
 height: 35px;
 width: 35px;
 }
-service_btn {
+#gopng_TOP_02 {
+background: url(../img/common/sprite.png) -400px -105px no-repeat;
+height: 35px;
+width: 35px;
+}
+#gopng_QQ2 {
+background: url(../img/common/sprite.png) -400px -140px no-repeat;
+height: 35px;
+width: 35px;
+}
+#gopng_QQ1 {
+background: url(../img/common/sprite.png) -400px -175px no-repeat;
+height: 35px;
+width: 35px;
+}
+#gopng_service_btn {
 background: url(../img/common/sprite.png) -0px -385px no-repeat;
 height: 23px;
 width: 81px;
 }
-online {
+#gopng_online {
 background: url(../img/common/sprite.png) -81px -385px no-repeat;
 height: 23px;
 width: 81px;
 }
-right {
-background: url(../img/common/sprite.png) -400px -105px no-repeat;
+#gopng_right {
+background: url(../img/common/sprite.png) -400px -210px no-repeat;
 height: 20px;
 width: 20px;
 }
-icon4 {
-background: url(../img/common/sprite.png) -400px -125px no-repeat;
+#gopng_icon6 {
+background: url(../img/common/sprite.png) -400px -230px no-repeat;
 height: 18px;
 width: 19px;
 }
-icon1 {
-background: url(../img/common/sprite.png) -400px -143px no-repeat;
+#gopng_icon1 {
+background: url(../img/common/sprite.png) -400px -248px no-repeat;
 height: 18px;
 width: 19px;
 }
-icon5 {
-background: url(../img/common/sprite.png) -400px -161px no-repeat;
+#gopng_icon2 {
+background: url(../img/common/sprite.png) -400px -266px no-repeat;
 height: 18px;
 width: 19px;
 }
-icon6 {
-background: url(../img/common/sprite.png) -400px -179px no-repeat;
+#gopng_icon3 {
+background: url(../img/common/sprite.png) -400px -284px no-repeat;
 height: 18px;
 width: 19px;
 }
-icon3 {
-background: url(../img/common/sprite.png) -400px -197px no-repeat;
+#gopng_icon4 {
+background: url(../img/common/sprite.png) -400px -302px no-repeat;
 height: 18px;
 width: 19px;
 }
-icon2 {
-background: url(../img/common/sprite.png) -400px -215px no-repeat;
+#gopng_icon5 {
+background: url(../img/common/sprite.png) -400px -320px no-repeat;
 height: 18px;
 width: 19px;
 }
-phone {
-background: url(../img/common/sprite.png) -419px -125px no-repeat;
+#gopng_phone {
+background: url(../img/common/sprite.png) -419px -230px no-repeat;
 height: 16px;
 width: 16px;
 }
-home {
-background: url(../img/common/sprite.png) -420px -105px no-repeat;
+#gopng_home {
+background: url(../img/common/sprite.png) -420px -210px no-repeat;
 height: 12px;
 width: 12px;
 }
-regist {
-background: url(../img/common/sprite.png) -419px -143px no-repeat;
+#gopng_regist {
+background: url(../img/common/sprite.png) -419px -248px no-repeat;
 height: 12px;
 width: 12px;
 }
-user {
-background: url(../img/common/sprite.png) -419px -161px no-repeat;
+#gopng_user {
+background: url(../img/common/sprite.png) -419px -266px no-repeat;
 height: 12px;
 width: 12px;
 }
-web {
-background: url(../img/common/sprite.png) -419px -179px no-repeat;
+#gopng_web {
+background: url(../img/common/sprite.png) -419px -284px no-repeat;
 height: 12px;
 width: 12px;
 }
