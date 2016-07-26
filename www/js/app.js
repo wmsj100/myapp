@@ -1,11 +1,11 @@
 require.config({
     baseUrl: 'js/lib',
     paths: {
-        app: '../app'
+        app: '../app',
+        jquery: 'jquery.js'
     }
 });
 
-require(['app/test'], function(test){
-    var a = test;
-    console.log(a);
+require(['app/page/topBar'], function(test){
+
 });

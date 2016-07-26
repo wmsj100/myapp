@@ -1,10 +1,14 @@
 <div id="topbar">
 	<div class="menu">
 		<ul>
-		<% topbar.forEach(function(item){ %>
-			<li><a href="<%- item['url'] %>"><%- item["value"] %></a></li>
-		<% }) %>
-	</ul>
+			<% topbar.forEach(function(item){ %>
+				<li>
+					<a href="<%- item['url'] %>">
+						<%- item["value"] %>
+					</a>
+				</li>
+				<% }) %>
+		</ul>
 	</div>
 	<div class="mobile">
 		<div class="left">
