@@ -12,11 +12,14 @@
 }
 
 div#topbar{
-    @topicon: 12px;
-    @topH: 30px;
-    @marginR: 40px;
-    @color: #8D8D8D;
-    @colorH: #FD2D63;
+    @topicon: 12px;     // icon图片的尺寸
+    @topH: 30px;        // topbar的高度
+    @marginR: 40px;     // 按钮的右间距
+    @color: #8D8D8D;    // 字体颜色
+    @colorH: #FD2D63;   // 字体hover颜色
+    @imgSize: 110px;    // 二维码图片的尺寸
+    @imgboxR: -100px;   // 图片框的右偏移位置
+    @imgSpacing: 5px;   // 二维码图片的间距
     width: 100%;
     background-color: #F1F1F1;
 
@@ -55,16 +58,16 @@ div#topbar{
                         // border: solid 1px red;
                     }
                     &:nth-child(1) i{
-                        background: url(../img/common/sprite.png) -400px -84px no-repeat;
+                        background: url(../img/common/sprite.png) -420px -105px no-repeat;
                     }
                     &:nth-child(2) i{
-                        background: url(../img/common/sprite.png) -436px -84px no-repeat;
+                        background: url(../img/common/sprite.png) -419px -161px no-repeat;
                     }
                     &:nth-child(3) i{
-                        background: url(../img/common/sprite.png) -412px -84px no-repeat;
+                        background: url(../img/common/sprite.png) -419px -143px no-repeat;
                     }
                     &:nth-child(4) i{
-                        background: url(../img/common/sprite.png) -424px -84px no-repeat;
+                        background: url(../img/common/sprite.png) -419px -179px no-repeat;
                     }
                     a{
                      .link;
@@ -79,24 +82,60 @@ div#topbar{
             right: 0;
             height: @topH;
             line-height: @topH;
-            margin-right: 30px;
+            margin-right: 45px;
             position: relative;
 
-            a{
-                .link;
-                &:hover{
-                    text-decoration: none;
-                }
-            }
-
-            i{
+            div.top_tag{
+                i{
                 position: absolute;
-                background: url(../img/common/sprite.png) -457px -66px no-repeat;
+                background: url(../img/common/sprite.png) -419px -125px no-repeat;
                 display: block;
                 height: 16px;
                 width: 16px;
                 top: 7px;
                 left: -17px;
+            }
+
+             a{
+                .link;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            }
+
+            div.imgbox{
+                display: none;
+                position: absolute;
+                right: @imgboxR;
+                top: @topH;
+                z-index: 10;
+                ul{
+                    .clearfix;
+                    border: solid 1px;
+                    border-radius: 5px;
+                    border-color: #ddd;
+                    width: @imgSize*2 + @imgSpacing*3;
+                    background-color: #fff;
+                    li{
+                        float: left;
+                        text-align: center;
+                        padding: @imgSpacing;
+                        &:nth-child(2){
+                            padding-left: 0;
+                        }
+                        img{
+                            width: @imgSize;
+                            height: @imgSize;
+                            display: block;
+                        }
+                        span{
+                            display: block;
+                            height: 20px;
+                            line-height: 20px;
+                        }
+                    }
+                }
             }
         }
     }

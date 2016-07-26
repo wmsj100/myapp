@@ -9,7 +9,7 @@ module.exports = function(app){
         var data = {
             title: '婚淘淘',
             topbar: [{
-                value: "返回首页",
+                value: "首页",
                 url: "/"
             }, {
                 value: "登录",
