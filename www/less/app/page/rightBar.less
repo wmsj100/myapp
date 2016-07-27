@@ -1,6 +1,7 @@
 .clearfix {
     display: block;
     zoom: 1;
+
     &:after {
         content: "";
         display: block;
@@ -10,18 +11,22 @@
         visibility: hidden;
     }
 }
-
-div#right_bar{
+div#right_bar {
     @imgSize: 35px;
     @bgColor: #FF1004;
     @qqtabW: 160px;
     @qqtabH: 290px;
     @borderLine: #D2D2D2;
     @color: #333;
-    @padding: 10px 15px;    // qq_tab的左右边距
-    @listMargin: 10px 0;    // 客服列表的上下间距
+    @padding: 10px 15px;
+
+    /*// qq_tab的左右边距*/
+    @listMargin: 10px 0;
+
+    /*// 客服列表的上下间距*/
     @queryIconW: 81px;
     @queryIconH: 23px;
+    @qr_code: 110px;    /* 二维码尺寸*/
     width: 35px;
     height: 100%;
     position: fixed;
@@ -30,43 +35,26 @@ div#right_bar{
     background-color: #000;
     color: red;
 
-    &>ul{
+    &>ul {
         .clearfix;
         position: relative;
         top: 70%;
         right: 0;
-        &>li{
+
+        &>li {
             float: left;
             width: @imgSize;
             height: @imgSize;
             position: relative;
-            // div.rightbar_img{
-                // width: @imgSize;
-                // height: @imgSize;
-            // }
-            // &:nth-child(1)>:first-child{
-            &:nth-child(1){
-                
-                // position: relative;
+
+            &:nth-child(1) {
+                position: relative;
                 background: url(../img/common/sprite.png) -417px -179px no-repeat;
-                &:hover{
+
+                &:hover {
                     background: url(../img/common/sprite.png) -417px -214px no-repeat;
-                } 
-            }
-             &:nth-child(2)>{
-                background: url(../img/common/sprite.png) -417px -74px no-repeat;
-                &:hover{
-                    background: url(../img/common/sprite.png) -417px -109px no-repeat;
                 }
-            }
-             &:nth-child(3)>{
-                 cursor: pointer;
-                background: url(../img/common/sprite.png) -417px -249px no-repeat;
-                &:hover{
-                    background: url(../img/common/sprite.png) -417px -144px no-repeat;
-                }
-            }
-             div.qq_tab{
+                div.qq_tab {
                     width: @qqtabW;
                     height: @qqtabH;
                     color: @color;
@@ -78,43 +66,43 @@ div#right_bar{
                     background-color: #E2E2E2;
                     display: none;
 
-                    div.qq_tab_logo{
+                    div.qq_tab_logo {
                         border-bottom: solid 1px @borderLine;
                         padding: @padding;
-                        &>a.logo{
+
+                        &>a.logo {
                             display: block;
                             height: 40px;
                             background: url(../img/common/sprite.png) -160px -345px no-repeat;
-                            
                         }
                     }
-                    div.qq_tab_cont{
-                        
+                    div.qq_tab_cont {
                         padding: @padding;
                         border-bottom: solid 1px @borderLine;
-                        &>h3{
+
+                        &>h3 {
                             font-size: 14px;
                         }
-                        &>ul{
-                            &>li{
+                        &>ul {
+                            &>li {
                                 line-height: 23px;
                                 position: relative;
                                 margin: @listMargin;
-                                // padding-left: 12px;
-                                &>span{
+
+                                &>span {
                                     font-size: 14px;
                                 }
-                                &>a{
-                                   opacity: 0.7;
-                                   &:hover{
-                                       opacity: 1;
-                                   }
-                                    &>i{
+                                &>a {
+                                    opacity: 0.7;
+
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                    &>i {
                                         display: block;
                                         position: absolute;
                                         top: 0;
                                         right: 0;
-                                        // display: inline-block;
                                         height: @queryIconH;
                                         width: @queryIconW;
                                         background: url(../img/common/sprite.png) -0px -385px no-repeat;
@@ -123,17 +111,47 @@ div#right_bar{
                             }
                         }
                     }
-                    div.qq_tab_foot{
+                    div.qq_tab_foot {
                         padding: @padding;
                         text-align: justify;
-                        &>h3{
+
+                        &>h3 {
                             margin-bottom: 5px;
                         }
-                        &>span{
-
+                        &>span {
                         }
                     }
                 }
+            }
+            &:nth-child(2) {
+                position: relative;
+                background: url(../img/common/sprite.png) -417px -74px no-repeat;
+
+                &:hover {
+                    background: url(../img/common/sprite.png) -417px -109px no-repeat;
+                }
+
+                 div.qr_code_img {
+
+                     width: @qr_code;
+                     height: @qr_code;
+                     border: solid 1px @borderLine;
+                     border-radius: 5px;
+                     position: absolute;
+                     bottom: 0;
+                     right: @imgSize;
+                     background: url(../img/common/android.png) no-repeat;
+                     display: none;
+                 }
+            }
+            &:nth-child(3) {
+                cursor: pointer;
+                background: url(../img/common/sprite.png) -417px -249px no-repeat;
+
+                &:hover {
+                    background: url(../img/common/sprite.png) -417px -144px no-repeat;
+                }
+            }
         }
     }
 }

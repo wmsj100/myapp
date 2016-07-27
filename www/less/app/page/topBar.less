@@ -1,6 +1,7 @@
 .clearfix {
     display: block;
     zoom: 1;
+
     &:after {
         content: "";
         display: block;
@@ -10,73 +11,80 @@
         visibility: hidden;
     }
 }
-
-div#topbar{
-    @topicon: 12px;     // icon图片的尺寸
-    @topH: 30px;        // topbar的高度
-    @marginR: 40px;     // 按钮的右间距
-    @color: #8D8D8D;    // 字体颜色
-    @colorH: #FD2D63;   // 字体hover颜色
-    @imgSize: 110px;    // 二维码图片的尺寸
-    @imgboxR: -100px;   // 图片框的右偏移位置
-    @imgSpacing: 5px;   // 二维码图片的间距
+div#topbar {
+    @topicon: 12px;
+    // icon图片的尺寸
+    @topH: 30px;
+    // topbar的高度
+    @marginR: 40px;
+    // 按钮的右间距
+    @color: #8D8D8D;
+    // 字体颜色
+    @colorH: #FD2D63;
+    // 字体hover颜色
+    @imgSize: 110px;
+    // 二维码图片的尺寸
+    @imgboxR: -100px;
+    // 图片框的右偏移位置
+    @imgSpacing: 5px;
+    // 二维码图片的间距
     width: 100%;
     background-color: #F1F1F1;
 
-    .link{
+    .link {
         color: @color;
-        &:hover{
+
+        &:hover {
             color: @colorH;
             text-decoration: underline;
         }
     }
-
-    div.ct{
+    div.ct {
         width: 1200px;
         height: @topH;
         margin: 0 auto;
-        border: solid 1px;
         .clearfix;
-        div.menu{
+
+        div.menu {
             margin-left: 30px;
             float: left;
-            ul{
+
+            ul {
                 .clearfix;
-                li{
+
+                li {
                     float: left;
                     line-height: @topH;
                     margin-right: @marginR;
                     position: relative;
 
-                    i{
+                    i {
                         display: block;
                         position: absolute;
                         width: @topicon;
                         height: @topicon;
                         top: 10px;
                         left: -15px;
-                        // border: solid 1px red;
                     }
-                    &:nth-child(1) i{
+                    &:nth-child(1) i {
                         background: url(../img/common/sprite.png) -417px -358px no-repeat;
                     }
-                    &:nth-child(2) i{
+                    &:nth-child(2) i {
                         background: url(../img/common/sprite.png) -441px -358px no-repeat;
                     }
-                    &:nth-child(3) i{
+                    &:nth-child(3) i {
                         background: url(../img/common/sprite.png) -429px -358px no-repeat;
                     }
-                    &:nth-child(4) i{
+                    &:nth-child(4) i {
                         background: url(../img/common/sprite.png) -417px -370px no-repeat;
                     }
-                    a{
-                     .link;
+                    a {
+                        .link;
                     }
                 }
             }
         }
-
-        div.mobile{
+        div.mobile {
             float: right;
             top: 0;
             right: 0;
@@ -85,51 +93,53 @@ div#topbar{
             margin-right: 45px;
             position: relative;
 
-            div.top_tag{
-                i{
-                position: absolute;
-                background: url(../img/common/sprite.png) -436px -340px no-repeat;
-                display: block;
-                height: 16px;
-                width: 16px;
-                top: 7px;
-                left: -17px;
-            }
+            div.top_tag {
+                i {
+                    position: absolute;
+                    background: url(../img/common/sprite.png) -436px -340px no-repeat;
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    top: 7px;
+                    left: -17px;
+                }
+                a {
+                    .link;
 
-             a{
-                .link;
-                &:hover{
-                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
-            }
-
-            div.imgbox{
+            div.imgbox {
                 display: none;
                 position: absolute;
                 right: @imgboxR;
                 top: @topH;
                 z-index: 10;
-                ul{
+
+                ul {
                     .clearfix;
                     border: solid 1px;
                     border-radius: 5px;
                     border-color: #ddd;
                     width: @imgSize*2 + @imgSpacing*3;
                     background-color: #fff;
-                    li{
+
+                    li {
                         float: left;
                         text-align: center;
                         padding: @imgSpacing;
-                        &:nth-child(2){
+
+                        &:nth-child(2) {
                             padding-left: 0;
                         }
-                        img{
+                        img {
                             width: @imgSize;
                             height: @imgSize;
                             display: block;
                         }
-                        span{
+                        span {
                             display: block;
                             height: 20px;
                             line-height: 20px;

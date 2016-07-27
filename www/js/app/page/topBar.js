@@ -6,11 +6,11 @@ define(['jquery'], function($) {
             if ($tab.is(":animated")) {
                 $tab.stop(true, true);
             }
-            $tab.fadeIn();
+            $tab.fadeIn('fast');
         }, function() {
-            $tab.fadeOut();
+            $tab.fadeOut('fast');
         }).find("a").click(function() {
             return false;
         });
-    })
+    });
 });
