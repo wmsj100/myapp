@@ -11,6 +11,14 @@
   visibility: hidden;
 }
 div#topbar {
+  /*// icon图片的尺寸*/
+  /*// topbar的高度*/
+  /*// 按钮的右间距*/
+  /*// 字体颜色*/
+  /*// 字体hover颜色*/
+  /*// 二维码图片的尺寸*/
+  /*// 图片框的右偏移位置*/
+  /*// 二维码图片的间距*/
   width: 100%;
   background-color: #F1F1F1;
 }

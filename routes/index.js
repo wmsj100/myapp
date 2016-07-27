@@ -5,8 +5,9 @@ module.exports = function(app){
     })
 
     app.get('/', function(req, res){
-
-        var data = {
+        var Mock = require('mockjs'),
+            data = null;
+        data = {
             title: '婚淘淘',
             topbar: [{
                 value: "首页",
@@ -27,6 +28,14 @@ module.exports = function(app){
             }
         };
 
+        data.city = Mock.mock({
+            'default': '太原',
+            'default_url': '@url("https")',
+            'info|14': [{
+                'city': '@city',
+                'url': '@url("https")'
+            }]
+        });
         res.render('index', data);
     });
 }
