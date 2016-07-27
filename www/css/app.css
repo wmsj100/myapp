@@ -113,16 +113,16 @@ div#topbar div.ct div.menu ul li i {
   left: -15px;
 }
 div#topbar div.ct div.menu ul li:nth-child(1) i {
-  background: url(../img/common/sprite.png) -420px -210px no-repeat;
+  background: url(../img/common/sprite.png) -417px -358px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(2) i {
-  background: url(../img/common/sprite.png) -419px -266px no-repeat;
+  background: url(../img/common/sprite.png) -441px -358px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(3) i {
-  background: url(../img/common/sprite.png) -419px -248px no-repeat;
+  background: url(../img/common/sprite.png) -429px -358px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(4) i {
-  background: url(../img/common/sprite.png) -419px -284px no-repeat;
+  background: url(../img/common/sprite.png) -417px -370px no-repeat;
 }
 div#topbar div.ct div.menu ul li a {
   color: #8D8D8D;
@@ -142,7 +142,7 @@ div#topbar div.ct div.mobile {
 }
 div#topbar div.ct div.mobile div.top_tag i {
   position: absolute;
-  background: url(../img/common/sprite.png) -419px -230px no-repeat;
+  background: url(../img/common/sprite.png) -436px -340px no-repeat;
   display: block;
   height: 16px;
   width: 16px;
@@ -230,14 +230,14 @@ div#right_bar {
   background-color: #000;
   color: red;
 }
-div#right_bar ul {
+div#right_bar > ul {
   display: block;
   zoom: 1;
   position: relative;
   top: 70%;
   right: 0;
 }
-div#right_bar ul:after {
+div#right_bar > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -245,7 +245,7 @@ div#right_bar ul:after {
   height: 0;
   visibility: hidden;
 }
-div#right_bar ul:after {
+div#right_bar > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -253,28 +253,86 @@ div#right_bar ul:after {
   height: 0;
   visibility: hidden;
 }
-div#right_bar ul li {
+div#right_bar > ul > li {
   float: left;
-}
-div#right_bar ul li div.rightbar_img {
   width: 35px;
   height: 35px;
+  position: relative;
 }
-div#right_bar ul li:nth-child(1) > :first-child {
-  background: url(../img/common/sprite.png) -400px -140px no-repeat;
+div#right_bar > ul > li:nth-child(1) {
+  background: url(../img/common/sprite.png) -417px -179px no-repeat;
 }
-div#right_bar ul li:nth-child(1) > :first-child:hover {
-  background: url(../img/common/sprite.png) -400px -175px no-repeat;
+div#right_bar > ul > li:nth-child(1):hover {
+  background: url(../img/common/sprite.png) -417px -214px no-repeat;
 }
-div#right_bar ul li:nth-child(2) > :first-child {
-  background: url(../img/common/sprite.png) -400px -35px no-repeat;
+div#right_bar > ul > li:nth-child(2) {
+  background: url(../img/common/sprite.png) -417px -74px no-repeat;
 }
-div#right_bar ul li:nth-child(2) > :first-child:hover {
-  background: url(../img/common/sprite.png) -400px -70px no-repeat;
+div#right_bar > ul > li:nth-child(2):hover {
+  background: url(../img/common/sprite.png) -417px -109px no-repeat;
 }
-div#right_bar ul li:nth-child(3) > :first-child {
-  background: url(../img/common/sprite.png) -400px 0px no-repeat;
+div#right_bar > ul > li:nth-child(3) {
+  cursor: pointer;
+  background: url(../img/common/sprite.png) -417px -249px no-repeat;
 }
-div#right_bar ul li:nth-child(3) > :first-child:hover {
-  background: url(../img/common/sprite.png) -400px -105px no-repeat;
+div#right_bar > ul > li:nth-child(3):hover {
+  background: url(../img/common/sprite.png) -417px -144px no-repeat;
+}
+div#right_bar > ul > li div.qq_tab {
+  width: 160px;
+  height: 290px;
+  color: #333;
+  border: solid 1px #D2D2D2;
+  border-radius: 5px;
+  position: absolute;
+  top: -255px;
+  right: 35px;
+  background-color: #E2E2E2;
+  display: none;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_logo {
+  border-bottom: solid 1px #D2D2D2;
+  padding: 10px 15px;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_logo > a.logo {
+  display: block;
+  height: 40px;
+  background: url(../img/common/sprite.png) -160px -345px no-repeat;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont {
+  padding: 10px 15px;
+  border-bottom: solid 1px #D2D2D2;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > h3 {
+  font-size: 14px;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > ul > li {
+  line-height: 23px;
+  position: relative;
+  margin: 10px 0;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > ul > li > span {
+  font-size: 14px;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > ul > li > a {
+  opacity: 0.7;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > ul > li > a:hover {
+  opacity: 1;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_cont > ul > li > a > i {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 23px;
+  width: 81px;
+  background: url(../img/common/sprite.png) 0px -385px no-repeat;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_foot {
+  padding: 10px 15px;
+  text-align: justify;
+}
+div#right_bar > ul > li div.qq_tab div.qq_tab_foot > h3 {
+  margin-bottom: 5px;
 }

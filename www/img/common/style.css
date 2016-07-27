@@ -1,295 +1,300 @@
-#gopng_good5 {
+good5 {
 background: url(../img/common/sprite.png) -0px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good2 {
+good2 {
 background: url(../img/common/sprite.png) -120px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good4 {
+good6 {
 background: url(../img/common/sprite.png) -0px -80px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good6 {
+good7 {
 background: url(../img/common/sprite.png) -120px -80px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good7 {
+good8 {
 background: url(../img/common/sprite.png) -0px -160px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good8 {
+good3 {
 background: url(../img/common/sprite.png) -120px -160px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_good3 {
+good4 {
 background: url(../img/common/sprite.png) -240px -0px no-repeat;
 height: 80px;
 width: 120px;
 }
-#gopng_th {
+th {
 background: url(../img/common/sprite.png) -240px -80px no-repeat;
 height: 68px;
 width: 70px;
 }
-#gopng_logo {
+logo {
 background: url(../img/common/sprite.png) -0px -240px no-repeat;
 height: 59px;
 width: 190px;
 }
-#gopng_step {
+step {
 background: url(../img/common/sprite.png) -0px -299px no-repeat;
 height: 46px;
 width: 336px;
 }
-#gopng_nav70 {
+nav50 {
 background: url(../img/common/sprite.png) -310px -80px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav50 {
+nav40 {
 background: url(../img/common/sprite.png) -240px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav40 {
+nav3(1) {
 background: url(../img/common/sprite.png) -280px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav3(1) {
+nav20 {
 background: url(../img/common/sprite.png) -320px -148px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav20 {
+nav10 {
 background: url(../img/common/sprite.png) -240px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav10 {
+nav80 {
 background: url(../img/common/sprite.png) -280px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav80 {
+nav1(1) {
 background: url(../img/common/sprite.png) -320px -188px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav1(1) {
+nav30 {
 background: url(../img/common/sprite.png) -360px -0px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav30 {
+nav70 {
 background: url(../img/common/sprite.png) -360px -40px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav2(1) {
+nav2 {
 background: url(../img/common/sprite.png) -360px -80px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav2 {
+nav3 {
 background: url(../img/common/sprite.png) -360px -120px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav3 {
+nav4(1) {
 background: url(../img/common/sprite.png) -360px -160px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav4(1) {
+nav4 {
 background: url(../img/common/sprite.png) -360px -200px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav4 {
+nav5(1) {
 background: url(../img/common/sprite.png) -360px -240px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav5(1) {
+nav5 {
 background: url(../img/common/sprite.png) -360px -280px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav5 {
+nav8 {
 background: url(../img/common/sprite.png) -0px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav8 {
+nav7 {
 background: url(../img/common/sprite.png) -40px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav7 {
+nav1 {
 background: url(../img/common/sprite.png) -80px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_nav1 {
+nav2(1) {
 background: url(../img/common/sprite.png) -120px -345px no-repeat;
 height: 40px;
 width: 40px;
 }
-#gopng_arrow02 {
+logo_rightbar {
 background: url(../img/common/sprite.png) -160px -345px no-repeat;
+height: 40px;
+width: 129px;
+}
+arrow02 {
+background: url(../img/common/sprite.png) -289px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow01 {
-background: url(../img/common/sprite.png) -177px -345px no-repeat;
+arrow01 {
+background: url(../img/common/sprite.png) -306px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow03 {
-background: url(../img/common/sprite.png) -194px -345px no-repeat;
+arrow04 {
+background: url(../img/common/sprite.png) -323px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow04 {
-background: url(../img/common/sprite.png) -211px -345px no-repeat;
+arrow05 {
+background: url(../img/common/sprite.png) -340px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow05 {
-background: url(../img/common/sprite.png) -228px -345px no-repeat;
+arrow06 {
+background: url(../img/common/sprite.png) -357px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow06 {
-background: url(../img/common/sprite.png) -245px -345px no-repeat;
+arrow07 {
+background: url(../img/common/sprite.png) -374px -345px no-repeat;
 height: 38px;
 width: 17px;
 }
-#gopng_arrow07 {
-background: url(../img/common/sprite.png) -262px -345px no-repeat;
-height: 38px;
-width: 17px;
-}
-#gopng_arrow08 {
-background: url(../img/common/sprite.png) -279px -345px no-repeat;
-height: 38px;
-width: 17px;
-}
-#gopng_nav6 {
-background: url(../img/common/sprite.png) -296px -345px no-repeat;
-height: 37px;
-width: 40px;
-}
-#gopng_nav60 {
-background: url(../img/common/sprite.png) -336px -345px no-repeat;
-height: 37px;
-width: 40px;
-}
-#gopng_TOP_01 {
+arrow08 {
 background: url(../img/common/sprite.png) -400px -0px no-repeat;
+height: 38px;
+width: 17px;
+}
+arrow03 {
+background: url(../img/common/sprite.png) -400px -38px no-repeat;
+height: 38px;
+width: 17px;
+}
+nav60 {
+background: url(../img/common/sprite.png) -417px -0px no-repeat;
+height: 37px;
+width: 40px;
+}
+nav6 {
+background: url(../img/common/sprite.png) -417px -37px no-repeat;
+height: 37px;
+width: 40px;
+}
+erweima01 {
+background: url(../img/common/sprite.png) -417px -74px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_erweima01 {
-background: url(../img/common/sprite.png) -400px -35px no-repeat;
+erweima02 {
+background: url(../img/common/sprite.png) -417px -109px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_erweima02 {
-background: url(../img/common/sprite.png) -400px -70px no-repeat;
+TOP_02 {
+background: url(../img/common/sprite.png) -417px -144px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_TOP_02 {
-background: url(../img/common/sprite.png) -400px -105px no-repeat;
+QQ2 {
+background: url(../img/common/sprite.png) -417px -179px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_QQ2 {
-background: url(../img/common/sprite.png) -400px -140px no-repeat;
+QQ1 {
+background: url(../img/common/sprite.png) -417px -214px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_QQ1 {
-background: url(../img/common/sprite.png) -400px -175px no-repeat;
+TOP_01 {
+background: url(../img/common/sprite.png) -417px -249px no-repeat;
 height: 35px;
 width: 35px;
 }
-#gopng_service_btn {
+online {
 background: url(../img/common/sprite.png) -0px -385px no-repeat;
 height: 23px;
 width: 81px;
 }
-#gopng_online {
+service_btn {
 background: url(../img/common/sprite.png) -81px -385px no-repeat;
 height: 23px;
 width: 81px;
 }
-#gopng_right {
-background: url(../img/common/sprite.png) -400px -210px no-repeat;
+right {
+background: url(../img/common/sprite.png) -417px -284px no-repeat;
 height: 20px;
 width: 20px;
 }
-#gopng_icon6 {
-background: url(../img/common/sprite.png) -400px -230px no-repeat;
+icon6 {
+background: url(../img/common/sprite.png) -437px -284px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_icon1 {
-background: url(../img/common/sprite.png) -400px -248px no-repeat;
+icon2 {
+background: url(../img/common/sprite.png) -417px -304px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_icon2 {
-background: url(../img/common/sprite.png) -400px -266px no-repeat;
+icon3 {
+background: url(../img/common/sprite.png) -436px -304px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_icon3 {
-background: url(../img/common/sprite.png) -400px -284px no-repeat;
+icon4 {
+background: url(../img/common/sprite.png) -417px -322px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_icon4 {
-background: url(../img/common/sprite.png) -400px -302px no-repeat;
+icon5 {
+background: url(../img/common/sprite.png) -436px -322px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_icon5 {
-background: url(../img/common/sprite.png) -400px -320px no-repeat;
+icon1 {
+background: url(../img/common/sprite.png) -417px -340px no-repeat;
 height: 18px;
 width: 19px;
 }
-#gopng_phone {
-background: url(../img/common/sprite.png) -419px -230px no-repeat;
+phone {
+background: url(../img/common/sprite.png) -436px -340px no-repeat;
 height: 16px;
 width: 16px;
 }
-#gopng_home {
-background: url(../img/common/sprite.png) -420px -210px no-repeat;
+home {
+background: url(../img/common/sprite.png) -417px -358px no-repeat;
 height: 12px;
 width: 12px;
 }
-#gopng_regist {
-background: url(../img/common/sprite.png) -419px -248px no-repeat;
+regist {
+background: url(../img/common/sprite.png) -429px -358px no-repeat;
 height: 12px;
 width: 12px;
 }
-#gopng_user {
-background: url(../img/common/sprite.png) -419px -266px no-repeat;
+user {
+background: url(../img/common/sprite.png) -441px -358px no-repeat;
 height: 12px;
 width: 12px;
 }
-#gopng_web {
-background: url(../img/common/sprite.png) -419px -284px no-repeat;
+web {
+background: url(../img/common/sprite.png) -417px -370px no-repeat;
 height: 12px;
 width: 12px;
 }

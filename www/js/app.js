@@ -6,6 +6,6 @@ require.config({
     }
 });
 
-require(['app/page/topBar'], function(test){
+require(['app/page/topBar', 'app/page/rightBar'], function(){
 
 });
