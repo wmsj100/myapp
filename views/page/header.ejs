@@ -3,22 +3,25 @@
         <a href="#"></a>
     </div>
     <div class="city">
-    
+        
         <h3><a href="<%- city['default_url'] %>"><%- city['default'] %></a></h3>
-        <p>[切换城市]</p>
-        <!-- <div class="city_info">
-            <h3><a href="<%- city['default_url'] %>"><%- city['default'] %></a></h3>
-            <h3>热门城市</h3>
-            <ul>
-                <% city.info.forEach(function(item){ %>
+        <div class="change_city">
+            <p>[切换城市]</p>
+            <div class="city_info">
+                <h3><a href="<%- city['default_url'] %>"><%- city['default'] %></a></h3>
+                <p class="hot_city">热门城市</p>
+                <ul>
+                    <% city.info.forEach(function(item){ %>
                     <li>
                         <% item['city'] = item['city'].substr(0,2); %>
                         <a href="<%- item['url'] %>"><%- item['city'] %></a>
                     </li>
-                <% }) %>
-            </ul>
-            
-        </div> -->
+                    <% }) %>
+                </ul>
+                <p class="all_city"><a href="<%- city['all'] %>">全部城市>></a></p>
+            </div>
+        </div>
+        
     </div>
     <div class="search"></div>
 </div>

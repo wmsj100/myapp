@@ -408,6 +408,16 @@ div#right_bar > ul > li:nth-child(3):hover {
   visibility: hidden;
 }
 #header {
+  /*logo图片的宽度*/
+  /*logo图片的高度*/
+  /*链接的激活颜色*/
+  /*链接的默认颜色*/
+  /*边框的颜色*/
+  /*tab内部的元素间距*/
+  /*城市列表元素的宽度*/
+  /*城市列表元素的高度*/
+  /*tab面板偏移的高度*/
+  /*tab面板偏移的left*/
   width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
@@ -439,9 +449,15 @@ div#right_bar > ul > li:nth-child(3):hover {
   height: 0;
   visibility: hidden;
 }
+#header .linkStyle {
+  color: #666;
+}
+#header .linkStyle:hover {
+  color: #ff3b6d;
+  text-decoration: underline;
+}
 #header > div.logo {
   float: left;
-  border: solid 1px;
 }
 #header > div.logo > a {
   display: block;
@@ -450,7 +466,113 @@ div#right_bar > ul > li:nth-child(3):hover {
   background: url(../img/common/sprite.png) 0px -240px no-repeat;
 }
 #header > div.city {
+  height: 59px;
   float: left;
+  padding-left: 50px;
+  position: relative;
+}
+#header > div.city > h3 {
+  margin-top: 10px;
+}
+#header > div.city > h3 > a {
+  color: #ff3b6d;
+  opacity: 0.8;
+  font-size: 16px;
+}
+#header > div.city > h3 > a:hover {
+  opacity: 1;
+}
+#header > div.city > div.change_city > p {
+  cursor: pointer;
+  color: #666;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#header > div.city > div.change_city > p:hover {
+  color: #ff3b6d;
+}
+#header > div.city > div.change_city > div.city_info {
+  position: absolute;
+  top: 63px;
+  left: 45px;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: none;
+}
+#header > div.city > div.change_city > div.city_info > h3 {
+  font-size: 14px;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #eee;
+}
+#header > div.city > div.change_city > div.city_info > h3 > a {
+  color: #666;
+}
+#header > div.city > div.change_city > div.city_info > h3 > a:hover {
+  color: #ff3b6d;
+  text-decoration: underline;
+}
+#header > div.city > div.change_city > div.city_info > p.hot_city {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+#header > div.city > div.change_city > div.city_info > ul {
+  display: block;
+  zoom: 1;
+  padding: 5px 10px;
+  padding-top: 0;
+  width: 315px;
+}
+#header > div.city > div.change_city > div.city_info > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+#header > div.city > div.change_city > div.city_info > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+#header > div.city > div.change_city > div.city_info > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+#header > div.city > div.change_city > div.city_info > ul > li {
+  float: left;
+  width: 45px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+#header > div.city > div.change_city > div.city_info > ul > li > a {
+  color: #666;
+}
+#header > div.city > div.change_city > div.city_info > ul > li > a:hover {
+  color: #ff3b6d;
+  text-decoration: underline;
+}
+#header > div.city > div.change_city > div.city_info > p.all_city {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#header > div.city > div.change_city > div.city_info > p.all_city > a {
+  color: #666;
+}
+#header > div.city > div.change_city > div.city_info > p.all_city > a:hover {
+  color: #ff3b6d;
+  text-decoration: underline;
 }
 #header > div.search {
   float: right;

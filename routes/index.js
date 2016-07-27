@@ -34,7 +34,8 @@ module.exports = function(app){
             'info|14': [{
                 'city': '@city',
                 'url': '@url("https")'
-            }]
+            }],
+            'all': '@url("https")'
         });
         res.render('index', data);
     });
