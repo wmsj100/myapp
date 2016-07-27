@@ -33,9 +33,16 @@ module.exports = function(app){
             'default_url': '@url("https")',
             'info|14': [{
                 'city': '@city',
-                'url': '@url("https")'
+                'url': '@url("https","huntaotao")'
             }],
             'all': '@url("https")'
+        });
+        data.search = Mock.mock({
+            'hot|4-8': [{
+                'name': '@cname',
+                'url': '@url("https","huntaotao")',
+                'boolean': '@boolean(1,3)'
+            }]
         });
         res.render('index', data);
     });

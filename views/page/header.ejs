@@ -23,5 +23,25 @@
         </div>
         
     </div>
-    <div class="search"></div>
+    <div class="search">
+        <ul class="input_box">
+            <li>
+                <input type="text" placeholder="请输入搜索条件" name="search" autofocus>
+            </li>
+            <li>
+                <a href="#">搜索</a>
+            </li>
+        </ul>
+        <div class="hot_word">
+            <ul>
+                <% search['hot'].forEach(function(item){ %>
+                    <li>
+                        <a href="<%- item['url'] %>" data-status="<%- item['boolean'] %>">
+                        <%- item['name'] %>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
 </div>

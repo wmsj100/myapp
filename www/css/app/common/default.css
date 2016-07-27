@@ -12,7 +12,10 @@ ul,
 ol,
 dl,
 dt,
-li {
+li,
+input,
+textarea,
+img {
   padding: 0;
   margin: 0;
 }

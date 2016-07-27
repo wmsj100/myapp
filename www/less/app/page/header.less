@@ -25,7 +25,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-    border: solid 1px;
+    /*border: solid 1px;*/
     .clearfix;
 
     .linkStyle {
@@ -129,6 +129,75 @@
         }
     }
     &>div.search {
+        @inputW: 408px;     /*输入框的宽度*/
+        @btnW: 92px;        /*搜索按钮的宽度*/
+        @btnC: #fff;        /*按钮颜色*/
+        @height: 40px;      /*输入框和搜索按钮的高度*/
+        @padding: 10px;     /*输入框内部的padding值*/
+        @borderC: #FF8286;  /*输入框的边框颜色*/
+        @borderAcrive: #FF1955;     /*输入框的边框激活状态的颜色*/
+        @radius: 5px;     /*设置边框的圆角*/
         float: right;
+
+        &>ul.input_box {
+            .clearfix;
+            li {
+                float: left;
+                &>input {
+                    width: @inputW;
+                    height: @height;
+                    display: inline-block;
+                    padding-left: @padding;
+                    border: solid 2px @borderC;
+                    border-radius: @radius 0 0 @radius;
+
+                    &:focus {
+                        border-color: @borderAcrive;
+                        border-right-color: @borderC;
+                        outline: none;
+                    }
+                }
+                &>a {
+                    display: inline-block;
+                    width: @btnW;
+                    height: @height;
+                    color: @btnC;
+                    line-height: @height;
+                    text-align: center;
+                    font-size: 16px;
+                    border: solid 2px @borderC;
+                    border-radius: 0 @radius @radius 0;
+                    background-color: @borderC;
+                    &:hover{
+                        border-color: @borderAcrive;
+                        background-color: @borderAcrive;
+                    }
+                }
+            }
+        }
+
+        &>div.hot_word{
+            &>ul{
+                .clearfix;
+                width: @inputW;
+                margin-left: 10px;
+                padding-top: 10px;
+                margin-bottom: -10px;
+                &>li{
+                    float: left;
+                    padding: 0 10px;
+                    border-right: solid 1px;
+                &:last-child{
+                    border-right: none;
+                }
+                    &>a{
+                        .linkStyle;
+                    }
+                    .active{
+                        color: @linkC;
+                    }
+                }
+            }
+        }
     }
 }
