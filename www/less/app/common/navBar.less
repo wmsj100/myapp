@@ -32,11 +32,35 @@ div#nav_bar {
     @iconSize: 20px;
     /*第一级菜单list的背景颜色*/
     @listOneBgC: #FF7B9E;
+    /* 右侧弹出面板宽度 */
+    @tabRightW: 520px;
+    /* 右侧弹出面板高度 */
+    @tabRightH: 480px;
+    /* 右侧弹出面板顶部padding值 */
+    @tabPadTop: 10px;
+    /* link 文字颜色 */
+    @linkC: #666;
+    /* link hover 时候的颜色 */
+    @linkHC: #FD2D63;
+    /* 标题文字的颜色 */
+    @linkTitle: #333;
+    /* 边框颜色 */
+    @borderC: #999;
+    /* 右侧弹出面板的背景颜色 */
+    @tabRightBgC: #F8F8F8;
+    /* imgbox 的背景图片宽度 */
+    @imgBoxW: 960px;
+    /* imgbox 背景图片高度 */
+    @imgBoxH: 480px;
     width: 1200px;
     margin: 0 auto;
-    border: solid 1px;
+    margin-top: 20px;
+    /*border: solid 1px;*/
+    position: relative;
+    .clearfix;
 
     .drop_nav {
+        float: left;
         height: @tabH;
         width: @tabW;
         opacity: 0.8;
@@ -58,20 +82,19 @@ div#nav_bar {
             position: absolute;
             top: @tabH;
             left: 0;
-            width: @tabW;
-            border: solid 1px green;
+            width: @tabW + @padLeft;
+            /*border: solid 1px green;*/
             color: @listOneC;
+            z-index: 10;
 
             &>ul {
+                height: 480px;
                 &>li {
                     width: @listOneW;
                     height: @listOneH;
                     line-height: @listOneH;
-                    /*border: solid 1px;*/
                     cursor: pointer;
-                    /*.active{
-                        background-color: @listOneBgC;
-                    }*/
+
                     &:hover{
                             background-color: @listOneBgC;
                         }
@@ -82,14 +105,11 @@ div#nav_bar {
                     &>span {
                         font-size: 14px;
                     }
-                    &>ul {
-                        display: none;
-                    }
+                    
                     &>i{
                         display: block;
                         width: @iconSize;
                         height: @iconSize;
-                        /*border: solid 1px;*/
                         margin-top: (@listOneH - @iconSize)/2;
                     }
                     &>i.icon{
@@ -172,8 +192,106 @@ div#nav_bar {
                     &:nth-child(8):hover>i.icon{
                         background: url(../img/common/sprite.png) -400px -237px no-repeat;
                     }
-                }
+                    &>ul.tab_right_box {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 240px;
+                        width: @tabRightW;
+                        height: @tabRightH - @tabPadTop;
+                        padding: 0 20px;
+                        /*padding-left: 30px;*/
+                        /*padding-right: 20px;*/
+                        padding-top: @tabPadTop;
+                        background-color: @tabRightBgC;
+                        opacity: 0.9;
 
+                        &>li{
+                            padding: 0;
+                            margin: 0;
+                            line-height: 20px;
+
+                            &>h3{
+                                font-size: 14px;
+                                border-bottom: solid 1px @borderC;
+                                padding-bottom: 10px;
+                                margin-top: 10px;
+                            }
+                            &>ul.tab_info{
+                               .clearfix;
+                               margin-top: 10px;
+
+                               &>li{
+                                float: left;
+                                padding: 0 10px;
+                                border-right: solid 1px @borderC;
+
+                                &>a{
+                                    font-size: 12px;
+                                    color: @linkC;
+                                    &:hover{
+                                        color: @linkHC;
+                                        text-decoration: underline;
+                                    }
+                                }
+                               }
+                               &>li:last-child{
+                                border-right: none;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &>div.nav_menu{
+        float: left;
+        margin-left: 20px;
+
+        &>ul{
+            .clearfix;
+
+            &>li{
+                height: @tabH;
+                float: left;
+                margin: 0 10px;
+                padding: 0 9px;
+                &>a{
+                    display: block;
+                    line-height: @tabH;
+                    color: @linkC;
+                    font-size: 18px;
+                    &:hover{
+                        color: @linkHC;
+                    }
+                }
+            }
+        }
+    }
+
+    &>div.img_box{
+        position: absolute;
+        width: @imgBoxW;
+        height: @imgBoxH;
+        top: @tabH;
+        left: 240px;
+        &>ul{
+            width: ;
+            &>li{
+                /* 通过绝对定位的方式让图片重叠 */
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                &>a{
+
+                    &>img{
+                        width: @imgBoxW;
+                        height: @imgBoxH;
+                    }
+                }
             }
         }
     }

@@ -288,7 +288,65 @@ module.exports = function(app) {
             }
             ]
         });
+        
+        data.nav = [{
+            'name': '首页',
+            'url': '#'
+        },{
+            'name': '婚宴',
+            'url': '#'
+        },{
+            'name': '婚庆',
+            'url': '#'
+        },{
+            'name': '影楼',
+            'url': '#'
+        },{
+            'name': '婚纱',
+            'url': '#'
+        },{
+            'name': '礼服',
+            'url': '#'
+        },{
+            'name': '婚品',
+            'url': '#'
+        },{
+            'name': '珠宝',
+            'url': '#'
+        },{
+            'name': '家纺',
+            'url': '#'
+        },{
+            'name': '糖酒',
+            'url': '#'
+        }];
 
+        data.nav.imgBox = [{
+            'img': 'img/common/nav/gg_xk.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_cz.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_jd.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_hs.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_xj.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_ts.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_zhubao.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/nav/gg_dj.jpg',
+            'url': '#'
+        }]
+        
         res.render('index', data);
         // res.send(data);
     });
