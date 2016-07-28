@@ -49,7 +49,8 @@ module.exports = function(app) {
 
         // mock 商品分类的具体内容
         data.drop = Mock.mock({
-            'menu': [{
+            'menu': [
+            {
                 'name': '婚宴酒店',
                 'info': [
                     {
@@ -68,46 +69,226 @@ module.exports = function(app) {
                     }
                 ]
                
-            }]
-        });
-            // {
-            //     'name': '婚庆服务', 
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '婚纱摄影', 
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '婚纱礼服',
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '婚礼必备/现场布置',
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '珠宝首饰/品牌商家',
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '家纺布艺',
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // },{
-            //     'name': '礼品糖酒',
-            //     'fOne|3-8': '@cword(4)',
-            //     'fTwo|7-20': '@cword(4)',
-            //     'fThree|3-10': '@cword(4)'
-            // }]
+            },{
+                'name': '婚庆服务',
+                'info': [
+                    {
+                        'name': '婚礼策划',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '化妆服务',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '其他服务',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
                
-        // })
+            },{
+                'name': '婚纱摄影',
+                'info': [
+                    {
+                        'name': '婚纱摄影',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '旅拍区域',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '蜜月旅游',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            },{
+                'name': '婚纱礼服',
+                'info': [
+                    {
+                        'name': '新娘婚纱',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '女士礼服',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '旗袍',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '男士礼服',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '婚纱配饰',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '童装',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            },{
+                'name': '婚礼必备/现场布置',
+                'info': [
+                    {
+                        'name': '婚礼必备',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '现场布置',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            },{
+                'name': '珠宝首饰/品牌商家',
+                'info': [
+                    {
+                        'name': '品牌商家',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '戒指',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '项链/吊坠',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '手链/手镯',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '耳环/耳钉',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            },{
+                'name': '家纺布艺',
+                'info': [
+                    {
+                        'name': '结婚套件',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '被子系列',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '枕芯系列',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '床垫系列',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '靠垫饰品系列',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '洗舆品系列',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            },{
+                'name': '礼品糖酒',
+                'info': [
+                    {
+                        'name': '生活用品',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '定制用品',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '饰品类',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    },{
+                        'name': '工艺摆件',
+                        'data|3-8': [{
+                            'name': '@cword(4)',
+                            'url': '@url("http", "huntaotao")'
+                        }]
+                    }
+                ]
+               
+            }
+            ]
+        });
+
         res.render('index', data);
         // res.send(data);
     });
