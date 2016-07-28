@@ -1,0 +1,14 @@
+<div id="carousel_top">
+    <div class="carousel_wrap">
+        <ul>
+            <% carousel_top.forEach(function(item){ %>
+            <li>
+                <a href="<%- item['url'] %>">
+                    <img src="<%- item['img'] %>" alt="">
+                </a>
+            </li>
+            <% }) %>
+            
+        </ul>
+    </div>
+</div>

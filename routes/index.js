@@ -345,6 +345,29 @@ module.exports = function(app) {
         },{
             'img': 'img/common/nav/gg_dj.jpg',
             'url': '#'
+        }];
+
+        data.carousel_top = [{
+            'img': 'img/common/carousel_top/131124252958483466.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/131126910221693527.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/131124320363521718.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/131124432136186806.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/1311242564767849401.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/131124317206482078.jpg',
+            'url': '#'
+        },{
+            'img': 'img/common/carousel_top/131031763274984078.jpg',
+            'url': '#'
         }]
         
         res.render('index', data);

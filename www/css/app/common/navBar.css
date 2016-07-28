@@ -270,6 +270,8 @@ div#nav_bar > div.img_box {
   position: absolute;
   width: 960px;
   height: 480px;
+  /* 图片容器默认隐藏 */
+  display: none;
   top: 40px;
   left: 240px;
 }
@@ -281,7 +283,6 @@ div#nav_bar > div.img_box > ul > li {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
 }
 div#nav_bar > div.img_box > ul > li > a > img {
   width: 960px;

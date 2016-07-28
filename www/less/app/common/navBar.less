@@ -275,6 +275,8 @@ div#nav_bar {
         position: absolute;
         width: @imgBoxW;
         height: @imgBoxH;
+        /* 图片容器默认隐藏 */
+        display: none;
         top: @tabH;
         left: 240px;
         &>ul{
@@ -284,7 +286,7 @@ div#nav_bar {
                 position: absolute;
                 top: 0;
                 left: 0;
-                display: none;
+                
                 &>a{
 
                     &>img{

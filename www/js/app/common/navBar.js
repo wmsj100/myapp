@@ -22,7 +22,7 @@ define(['jquery', 'app/model/clearAnimate'], function($, clearAnimate){
                     .end()  // 返回上一级
                     .siblings() // 兄弟元素
                     .find('ul.tab_right_box').hide();
-
+            $imgBox.show(); // 进入list按钮时候显示图片容器
             $imgList.eq(index).fadeIn()
                     .siblings().fadeOut();
         }, function(){
@@ -32,8 +32,9 @@ define(['jquery', 'app/model/clearAnimate'], function($, clearAnimate){
         });
 
         $imgList.mouseout(function(){
-            $(this).hide();
-        })
+            // 鼠标离开图片容器时候隐藏图片容器
+            $(this).hide().parents('div.img_box').hide();
+        });
 
         $link.hover(function(){
 

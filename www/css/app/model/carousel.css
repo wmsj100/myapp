@@ -1,0 +1,95 @@
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div.carousel {
+  border: solid 1px;
+  position: relative;
+  overflow: hidden;
+  margin: 100px;
+}
+div.carousel .img_box {
+  position: relative;
+}
+div.carousel .img_box ul {
+  display: block;
+  zoom: 1;
+  position: absolute;
+}
+div.carousel .img_box ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div.carousel .img_box ul li {
+  float: left;
+}
+div.carousel .img_box ul li a {
+  font-size: 0;
+  /* 设置链接的字体高度为0 */
+}
+div.carousel .img_box ul li a img {
+  vertical-align: bottom;
+  /* 修改图片的垂直方向对齐方式 */
+}
+div.carousel .arrow {
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+}
+div.carousel .arrow:hover {
+  color: #333;
+  opacity: 1;
+}
+div.carousel .arrow:active {
+  color: #E74C3C;
+}
+div.carousel .arrow_left {
+  left: 10px;
+}
+div.carousel .arrow_right {
+  right: 10px;
+}
+div.carousel .btn_wrap {
+  position: absolute;
+  display: block;
+  zoom: 1;
+}
+div.carousel .btn_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div.carousel .btn_wrap a {
+  display: block;
+  float: left;
+  font-size: 0;
+  border: solid 1px #555;
+  border-radius: 20px;
+  opacity: 0.5;
+  background-color: #777;
+}
+div.carousel .btn_wrap a:hover {
+  background-color: #E74C3C;
+  opacity: 1;
+}
+div.carousel .btn_wrap a.active {
+  background-color: #333;
+  opacity: 1;
+}

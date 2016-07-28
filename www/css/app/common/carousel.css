@@ -1,0 +1,42 @@
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top {
+  width: 1200px;
+  margin: 0 auto;
+  border: solid 1px;
+}
+div#carousel_top > .carousel_wrap {
+  width: 960px;
+  height: 480px;
+  margin-left: 240px;
+  /*overflow: hidden;*/
+}
+div#carousel_top > .carousel_wrap > ul {
+  display: block;
+  zoom: 1;
+}
+div#carousel_top > .carousel_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .carousel_wrap > ul > li {
+  float: left;
+}
+div#carousel_top > .carousel_wrap > ul > li > a > img {
+  width: 960px;
+  height: 480px;
+}

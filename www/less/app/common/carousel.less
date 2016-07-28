@@ -1,0 +1,41 @@
+.clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+div#carousel_top {
+    @width: 960px;
+    @height: 480px;
+    @left: 240px;
+    width: 1200px;
+    margin: 0 auto;
+    border: solid 1px;
+
+    &>.carousel_wrap {
+        width: @width;
+        height: @height;  
+        margin-left: @left;
+        /*overflow: hidden;*/
+        &>ul {
+            .clearfix;
+            &>li {
+                float: left;
+
+                &>a {
+                    &>img {
+                        width: @width;
+                        height: @height;
+                    }
+                }
+            }
+        }
+    }
+}

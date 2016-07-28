@@ -1,0 +1,83 @@
+.clearfix {
+    display: block;
+    zoom: 1;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+div.carousel{
+    @btnBgColor: #777;
+    @btnBgHColor: #E74C3C;
+    @btnActiveBgC: #333;
+    @btnRadius: 20px;
+    border: solid 1px;
+    position: relative;
+    overflow: hidden;
+    margin: 100px;
+    .img_box{
+        position: relative;
+        ul{
+            .clearfix;
+            position: absolute;
+            li {
+                float: left;
+                a{
+                    font-size: 0;  /* 设置链接的字体高度为0 */
+                    img{
+                        vertical-align: bottom; /* 修改图片的垂直方向对齐方式 */
+                    }
+                }
+            }
+        }
+    }
+
+    .arrow{
+        color: #333;
+        cursor: pointer;
+        position: absolute;
+        opacity: 0.5;
+        top: 0;
+        &:hover {
+            color: #333;
+            opacity: 1;
+        }
+        &:active {
+            color: #E74C3C;
+        }
+    }
+
+    .arrow_left{
+        left: 10px;
+    }
+
+    .arrow_right{
+        right: 10px;
+    }
+
+    .btn_wrap{
+        position: absolute;
+        .clearfix;
+        a {
+            display: block;
+            float: left;
+            font-size: 0;
+            border: solid 1px #555;
+            border-radius: @btnRadius;
+            opacity: 0.5;
+            background-color: @btnBgColor;
+            &:hover {
+                background-color: @btnBgHColor;
+                opacity: 1;
+            }
+            &.active {
+                background-color: @btnActiveBgC;
+                opacity: 1;
+            }
+        }
+    }
+}
