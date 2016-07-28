@@ -1,14 +1,16 @@
     <div id="nav_bar">
         <div class="drop_nav">
-            <div class="drop_menu">
+            <!-- <div class="drop_menu"> -->
                 <span>产品/商品分类</span>
-            </div>
+            <!-- </div> -->
             <div class="drop_tab">
                 <ul class="drop_wrap">
                     <% drop['menu'].forEach(function(item){ %>
 
                         <li>
+                            <i class="icon"></i>
                             <span><%- item['name'] %></span>
+                            <i class="arror"></i>
                             <ul class="tab_title">
                                 <% item['info'].forEach(function(val){ %>
                                     <li>

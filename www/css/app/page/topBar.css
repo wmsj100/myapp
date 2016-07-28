@@ -75,16 +75,16 @@ div#topbar div.ct div.menu ul li i {
   left: -15px;
 }
 div#topbar div.ct div.menu ul li:nth-child(1) i {
-  background: url(../img/common/sprite.png) -417px -358px no-repeat;
+  background: url(../img/common/sprite.png) -477px -136px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(2) i {
-  background: url(../img/common/sprite.png) -441px -358px no-repeat;
+  background: url(../img/common/sprite.png) -471px -257px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(3) i {
-  background: url(../img/common/sprite.png) -429px -358px no-repeat;
+  background: url(../img/common/sprite.png) -465px -136px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(4) i {
-  background: url(../img/common/sprite.png) -417px -370px no-repeat;
+  background: url(../img/common/sprite.png) -360px -275px no-repeat;
 }
 div#topbar div.ct div.menu ul li a {
   color: #8D8D8D;
@@ -104,7 +104,7 @@ div#topbar div.ct div.mobile {
 }
 div#topbar div.ct div.mobile div.top_tag i {
   position: absolute;
-  background: url(../img/common/sprite.png) -436px -340px no-repeat;
+  background: url(../img/common/sprite.png) -455px -257px no-repeat;
   display: block;
   height: 16px;
   width: 16px;

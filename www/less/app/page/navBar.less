@@ -1,0 +1,180 @@
+.clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+div#nav_bar {
+    /*tab按钮的高度*/
+    @tabH: 40px;
+    /*tab按钮的宽度*/
+    @tabW: 220px;
+    /*tab按钮的背景颜色*/
+    @tabBgC: #FF1955;
+    /*tab按钮的颜色*/
+    @tabC: #fff;
+    /*tab按钮的左偏移*/
+    @padLeft: 20px;
+    /*第一级菜单字体颜色*/
+    @listOneC: #5F5F5F;    
+    /*第一级菜单list宽度*/
+    @listOneW: 230px;
+    /*第一级菜单list高度*/
+    @listOneH: 54px;
+    /*icon图片的尺寸*/
+    @iconSize: 20px;
+    /*第一级菜单list的背景颜色*/
+    @listOneBgC: #FF7B9E;
+    width: 1200px;
+    margin: 0 auto;
+    border: solid 1px;
+
+    .drop_nav {
+        height: @tabH;
+        width: @tabW;
+        opacity: 0.8;
+        cursor: pointer;
+        padding-left: @padLeft;
+        position: relative;
+        background-color: @tabBgC;
+        border-radius: 6px 6px 0 0;
+        &>span {
+            display: block;
+            color: @tabC;
+            font-size: 16px;
+            line-height: @tabH;  
+        }
+        &:hover {
+                opacity: 1;
+            }
+        &>div.drop_tab {
+            position: absolute;
+            top: @tabH;
+            left: 0;
+            width: @tabW;
+            border: solid 1px green;
+            color: @listOneC;
+
+            &>ul {
+                &>li {
+                    width: @listOneW;
+                    height: @listOneH;
+                    line-height: @listOneH;
+                    /*border: solid 1px;*/
+                    cursor: pointer;
+                    /*.active{
+                        background-color: @listOneBgC;
+                    }*/
+                    &:hover{
+                            background-color: @listOneBgC;
+                        }
+                    /* 鼠标hover list时候，字体颜色改变 */
+                    &:hover>span{
+                        color: #fff;
+                    }
+                    &>span {
+                        font-size: 14px;
+                    }
+                    &>ul {
+                        display: none;
+                    }
+                    &>i{
+                        display: block;
+                        width: @iconSize;
+                        height: @iconSize;
+                        /*border: solid 1px;*/
+                        margin-top: (@listOneH - @iconSize)/2;
+                    }
+                    &>i.icon{
+                        float: left;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                    /* 初始化时候隐藏箭头图标 */
+                    &>i.arror{
+                        display: none;
+                    }
+                    /* 鼠标hover时候箭头图标显示 */
+                    &:hover>i.arror{
+                        display: block;
+                        float: right;
+                        margin-right: 10px;
+                        background: url(../img/common/sprite.png) -441px -174px no-repeat;
+                    }
+                    /* nav1 */
+                    &:nth-child(1)>i.icon{
+                        background: url(../img/common/sprite.png) -465px -116px no-repeat;  
+                    }
+                    /* nav10 */
+                    &:nth-child(1):hover>i.icon{
+                        background: url(../img/common/sprite.png) -380px -217px no-repeat;
+                    }
+                    /* nav2 */
+                    &:nth-child(2)>i.icon{
+                        background: url(../img/common/sprite.png) -461px -151px no-repeat; 
+                    }
+                    /* nav20 */
+                    &:nth-child(2):hover>i.icon{
+                        background: url(../img/common/sprite.png) -400px -217px no-repeat;
+                    }
+                    /* nav3 */
+                    &:nth-child(3)>i.icon{
+                        background: url(../img/common/sprite.png) -461px -174px no-repeat;  
+                    }
+                    /* nav30 */
+                    &:nth-child(3):hover>i.icon{
+                        background: url(../img/common/sprite.png) -420px -217px no-repeat;
+                    }
+                    /* nav4 */
+                    &:nth-child(4)>i.icon{
+                        background: url(../img/common/sprite.png) -380px -197px no-repeat;  
+                    }
+                    /* nav40 */
+                    &:nth-child(4):hover>i.icon{
+                        background: url(../img/common/sprite.png) -440px -217px no-repeat;
+                    }
+                    /* nav5 */
+                    &:nth-child(5)>i.icon{
+                        background: url(../img/common/sprite.png) -420px -197px no-repeat;  
+                    }
+                    /* nav50 */
+                    &:nth-child(5):hover>i.icon{
+                        background: url(../img/common/sprite.png) -460px -217px no-repeat;
+                    }
+                    /* nav6 */
+                    &:nth-child(6)>i.icon{
+                        background: url(../img/common/sprite.png) -440px -237px no-repeat;  
+                    }
+                    /* nav60 */
+                    &:nth-child(6):hover>i.icon{
+                        background: url(../img/common/sprite.png) -420px -237px no-repeat;
+                    }
+                    /* nav7 */
+                    &:nth-child(7)>i.icon{
+                        background: url(../img/common/sprite.png) -460px -197px no-repeat;  
+                    }
+                    /* nav70 */
+                    &:nth-child(7):hover>i.icon{
+                        background: url(../img/common/sprite.png) -380px -237px no-repeat;
+                    }
+                    /* nav8 */
+                    &:nth-child(8)>i.icon{
+                        background: url(../img/common/sprite.png) -360px -217px no-repeat;  
+                    }
+                    /* nav80 */
+                    &:nth-child(8):hover>i.icon{
+                        background: url(../img/common/sprite.png) -400px -237px no-repeat;
+                    }
+                }
+
+            }
+        }
+    }
+}

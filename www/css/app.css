@@ -94,6 +94,14 @@ div#topbar div.ct:after {
   height: 0;
   visibility: hidden;
 }
+div#topbar div.ct:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 div#topbar div.ct div.menu {
   margin-left: 30px;
   float: left;
@@ -101,6 +109,14 @@ div#topbar div.ct div.menu {
 div#topbar div.ct div.menu ul {
   display: block;
   zoom: 1;
+}
+div#topbar div.ct div.menu ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 div#topbar div.ct div.menu ul:after {
   content: "";
@@ -141,16 +157,16 @@ div#topbar div.ct div.menu ul li i {
   left: -15px;
 }
 div#topbar div.ct div.menu ul li:nth-child(1) i {
-  background: url(../img/common/sprite.png) -417px -358px no-repeat;
+  background: url(../img/common/sprite.png) -477px -136px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(2) i {
-  background: url(../img/common/sprite.png) -441px -358px no-repeat;
+  background: url(../img/common/sprite.png) -471px -257px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(3) i {
-  background: url(../img/common/sprite.png) -429px -358px no-repeat;
+  background: url(../img/common/sprite.png) -465px -136px no-repeat;
 }
 div#topbar div.ct div.menu ul li:nth-child(4) i {
-  background: url(../img/common/sprite.png) -417px -370px no-repeat;
+  background: url(../img/common/sprite.png) -360px -275px no-repeat;
 }
 div#topbar div.ct div.menu ul li a {
   color: #8D8D8D;
@@ -170,7 +186,7 @@ div#topbar div.ct div.mobile {
 }
 div#topbar div.ct div.mobile div.top_tag i {
   position: absolute;
-  background: url(../img/common/sprite.png) -436px -340px no-repeat;
+  background: url(../img/common/sprite.png) -455px -257px no-repeat;
   display: block;
   height: 16px;
   width: 16px;
@@ -202,6 +218,14 @@ div#topbar div.ct div.mobile div.imgbox ul {
   border-color: #ddd;
   width: 235px;
   background-color: #fff;
+}
+div#topbar div.ct div.mobile div.imgbox ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 div#topbar div.ct div.mobile div.imgbox ul:after {
   content: "";
@@ -301,6 +325,14 @@ div#right_bar > ul:after {
   height: 0;
   visibility: hidden;
 }
+div#right_bar > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 div#right_bar > ul > li {
   float: left;
   width: 35px;
@@ -309,10 +341,10 @@ div#right_bar > ul > li {
 }
 div#right_bar > ul > li:nth-child(1) {
   position: relative;
-  background: url(../img/common/sprite.png) -417px -179px no-repeat;
+  background: url(../img/common/sprite.png) -412px -78px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1):hover {
-  background: url(../img/common/sprite.png) -417px -214px no-repeat;
+  background: url(../img/common/sprite.png) -430px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab {
   width: 160px;
@@ -333,7 +365,7 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_logo {
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_logo > a.logo {
   display: block;
   height: 40px;
-  background: url(../img/common/sprite.png) -160px -345px no-repeat;
+  background: url(../img/common/sprite.png) -360px 0px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_cont {
   padding: 10px 15px;
@@ -363,7 +395,7 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_cont > ul > li > a > 
   right: 0;
   height: 23px;
   width: 81px;
-  background: url(../img/common/sprite.png) 0px -385px no-repeat;
+  background: url(../img/common/sprite.png) -360px -174px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_foot {
   padding: 10px 15px;
@@ -374,10 +406,10 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_foot > h3 {
 }
 div#right_bar > ul > li:nth-child(2) {
   position: relative;
-  background: url(../img/common/sprite.png) -417px -74px no-repeat;
+  background: url(../img/common/sprite.png) -395px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(2):hover {
-  background: url(../img/common/sprite.png) -417px -109px no-repeat;
+  background: url(../img/common/sprite.png) -360px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(2) div.qr_code_img {
   width: 110px;
@@ -392,10 +424,10 @@ div#right_bar > ul > li:nth-child(2) div.qr_code_img {
 }
 div#right_bar > ul > li:nth-child(3) {
   cursor: pointer;
-  background: url(../img/common/sprite.png) -417px -249px no-repeat;
+  background: url(../img/common/sprite.png) -377px -78px no-repeat;
 }
 div#right_bar > ul > li:nth-child(3):hover {
-  background: url(../img/common/sprite.png) -417px -144px no-repeat;
+  background: url(../img/common/sprite.png) -447px -78px no-repeat;
 }
 /*引入侧边栏样式*/
 .clearfix {
@@ -427,6 +459,14 @@ div#right_bar > ul > li:nth-child(3):hover {
   /*border: solid 1px;*/
   display: block;
   zoom: 1;
+}
+#header:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 #header:after {
   content: "";
@@ -551,6 +591,14 @@ div#right_bar > ul > li:nth-child(3):hover {
   height: 0;
   visibility: hidden;
 }
+#header > div.city > div.change_city > div.city_info > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 #header > div.city > div.change_city > div.city_info > ul > li {
   float: left;
   width: 45px;
@@ -591,6 +639,14 @@ div#right_bar > ul > li:nth-child(3):hover {
 #header > div.search > ul.input_box {
   display: block;
   zoom: 1;
+}
+#header > div.search > ul.input_box:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 #header > div.search > ul.input_box:after {
   content: "";
@@ -680,6 +736,14 @@ div#right_bar > ul > li:nth-child(3):hover {
   height: 0;
   visibility: hidden;
 }
+#header > div.search > div.hot_word > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 #header > div.search > div.hot_word > ul > li {
   float: left;
   padding: 0 10px;
@@ -699,4 +763,168 @@ div#right_bar > ul > li:nth-child(3):hover {
   color: #ff3b6d;
 }
 /*引入header样式*/
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#nav_bar {
+  /*tab按钮的高度*/
+  /*tab按钮的宽度*/
+  /*tab按钮的背景颜色*/
+  /*tab按钮的颜色*/
+  /*tab按钮的左偏移*/
+  /*第一级菜单字体颜色*/
+  /*第一级菜单list宽度*/
+  /*第一级菜单list高度*/
+  /*icon图片的尺寸*/
+  /*第一级菜单list的背景颜色*/
+  width: 1200px;
+  margin: 0 auto;
+  border: solid 1px;
+}
+div#nav_bar .drop_nav {
+  height: 40px;
+  width: 220px;
+  opacity: 0.8;
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  background-color: #FF1955;
+  border-radius: 6px 6px 0 0;
+}
+div#nav_bar .drop_nav > span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+}
+div#nav_bar .drop_nav:hover {
+  opacity: 1;
+}
+div#nav_bar .drop_nav > div.drop_tab {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 220px;
+  border: solid 1px green;
+  color: #5F5F5F;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li {
+  width: 230px;
+  height: 54px;
+  line-height: 54px;
+  /*border: solid 1px;*/
+  cursor: pointer;
+  /*.active{
+                        background-color: @listOneBgC;
+                    }*/
+  /* 鼠标hover list时候，字体颜色改变 */
+  /* 初始化时候隐藏箭头图标 */
+  /* 鼠标hover时候箭头图标显示 */
+  /* nav1 */
+  /* nav10 */
+  /* nav2 */
+  /* nav20 */
+  /* nav3 */
+  /* nav30 */
+  /* nav4 */
+  /* nav40 */
+  /* nav5 */
+  /* nav50 */
+  /* nav6 */
+  /* nav60 */
+  /* nav7 */
+  /* nav70 */
+  /* nav8 */
+  /* nav80 */
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:hover {
+  background-color: #FF7B9E;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:hover > span {
+  color: #fff;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li > span {
+  font-size: 14px;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li > ul {
+  display: none;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li > i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  /*border: solid 1px;*/
+  margin-top: 17px;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li > i.icon {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li > i.arror {
+  display: none;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:hover > i.arror {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  background: url(../img/common/sprite.png) -441px -174px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(1) > i.icon {
+  background: url(../img/common/sprite.png) -465px -116px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(1):hover > i.icon {
+  background: url(../img/common/sprite.png) -380px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(2) > i.icon {
+  background: url(../img/common/sprite.png) -461px -151px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(2):hover > i.icon {
+  background: url(../img/common/sprite.png) -400px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(3) > i.icon {
+  background: url(../img/common/sprite.png) -461px -174px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(3):hover > i.icon {
+  background: url(../img/common/sprite.png) -420px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(4) > i.icon {
+  background: url(../img/common/sprite.png) -380px -197px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(4):hover > i.icon {
+  background: url(../img/common/sprite.png) -440px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(5) > i.icon {
+  background: url(../img/common/sprite.png) -420px -197px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(5):hover > i.icon {
+  background: url(../img/common/sprite.png) -460px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(6) > i.icon {
+  background: url(../img/common/sprite.png) -440px -237px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(6):hover > i.icon {
+  background: url(../img/common/sprite.png) -420px -237px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(7) > i.icon {
+  background: url(../img/common/sprite.png) -460px -197px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(7):hover > i.icon {
+  background: url(../img/common/sprite.png) -380px -237px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(8) > i.icon {
+  background: url(../img/common/sprite.png) -360px -217px no-repeat;
+}
+div#nav_bar .drop_nav > div.drop_tab > ul > li:nth-child(8):hover > i.icon {
+  background: url(../img/common/sprite.png) -400px -237px no-repeat;
+}
 /*引入navBar导航栏样式*/
