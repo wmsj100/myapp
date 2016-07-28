@@ -1232,18 +1232,81 @@ div#carousel_top {
   width: 1200px;
   margin: 0 auto;
   border: solid 1px;
+  position: relative;
 }
-div#carousel_top > .carousel_wrap {
+div#carousel_top > .img_wrap {
   width: 960px;
   height: 480px;
   margin-left: 240px;
+  position: relative;
   /*overflow: hidden;*/
 }
-div#carousel_top > .carousel_wrap > ul {
+div#carousel_top > .img_wrap > ul {
+  display: block;
+  zoom: 1;
+  width: 6720px;
+  /*height: @height;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div#carousel_top > .img_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .img_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .img_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .img_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .img_wrap > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#carousel_top > .img_wrap > ul > li {
+  float: left;
+}
+div#carousel_top > .img_wrap > ul > li > a > img {
+  width: 960px;
+  height: 480px;
+}
+div#carousel_top > .btn_wrap {
+  position: absolute;
+  bottom: 30px;
+  right: 394px;
+}
+div#carousel_top > .btn_wrap > ul {
   display: block;
   zoom: 1;
 }
-div#carousel_top > .carousel_wrap > ul:after {
+div#carousel_top > .btn_wrap > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -1251,7 +1314,7 @@ div#carousel_top > .carousel_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .carousel_wrap > ul:after {
+div#carousel_top > .btn_wrap > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -1259,7 +1322,7 @@ div#carousel_top > .carousel_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .carousel_wrap > ul:after {
+div#carousel_top > .btn_wrap > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -1267,7 +1330,7 @@ div#carousel_top > .carousel_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .carousel_wrap > ul:after {
+div#carousel_top > .btn_wrap > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -1275,7 +1338,7 @@ div#carousel_top > .carousel_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .carousel_wrap > ul:after {
+div#carousel_top > .btn_wrap > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -1283,11 +1346,21 @@ div#carousel_top > .carousel_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .carousel_wrap > ul > li {
+div#carousel_top > .btn_wrap > ul > li {
   float: left;
 }
-div#carousel_top > .carousel_wrap > ul > li > a > img {
-  width: 960px;
-  height: 480px;
+div#carousel_top > .btn_wrap > ul > li > a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  border: solid 1px #FF1955;
+  border-radius: 14px;
+}
+div#carousel_top > .btn_wrap > ul > li:last-child a {
+  margin-right: 0;
+}
+div#carousel_top > .btn_wrap > ul > li .active {
+  background-color: #FF1955;
 }
 /*引入carousel轮播样式*/

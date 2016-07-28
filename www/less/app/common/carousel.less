@@ -15,17 +15,28 @@ div#carousel_top {
     @width: 960px;
     @height: 480px;
     @left: 240px;
+    @btnSize: 14px;
+    @borderC: #FF1955;
+    @btnMargR: 10px;
+    @len: 7;
     width: 1200px;
     margin: 0 auto;
     border: solid 1px;
+    position: relative;
 
-    &>.carousel_wrap {
+    &>.img_wrap {
         width: @width;
         height: @height;  
         margin-left: @left;
+        position: relative;
         /*overflow: hidden;*/
         &>ul {
             .clearfix;
+            width: @width * @len;
+            /*height: @height;*/
+            position: absolute;
+            top: 0;
+            left: 0;
             &>li {
                 float: left;
 
@@ -36,6 +47,33 @@ div#carousel_top {
                     }
                 }
             }
+        }
+    }
+    &>.btn_wrap {
+        position: absolute;
+        bottom: 30px;
+        right: (@width - (@btnMargR * (@len - 1) + (@btnSize + 1 * 2) * @len))/2;
+        &>ul{
+            .clearfix;
+            &>li{
+                float: left;
+                &>a{
+                    display: block;
+                    width: @btnSize;
+                    height: @btnSize;
+                    margin-right: @btnMargR;
+                    border: solid 1px @borderC;
+                    border-radius: @btnSize;
+
+                }
+                &:last-child a{
+                margin-right: 0;
+                }
+                .active{
+                    background-color: @borderC;
+                }
+            }
+
         }
     }
 }
