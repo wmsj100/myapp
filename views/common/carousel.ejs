@@ -1,6 +1,6 @@
 <div id="carousel_top">
-    <div class="img_wrap">
-        <ul>
+    <!-- <div class="img_wrap"> -->
+        <ul class="img_wrap">
             <% carousel_top.forEach(function(item,index){ %>
             <li data-tag="<%- index %>">
                 <a href="<%- item['url'] %>">
@@ -10,14 +10,14 @@
             <% }) %>
             
         </ul>
-    </div>
-    <div class="btn_wrap">
-        <ul>
+    <!-- </div> -->
+    <!-- <div class="btn_wrap"> -->
+        <ul class="btn_wrap">
             <% carousel_top.forEach(function(item,index){ %>
             <li data-tag="<%- index %>">
                 <a href="<%- item['url'] %>"></a>
             </li>
             <% }) %>
         </ul>
-    </div>
+    <!-- </div> -->
 </div>

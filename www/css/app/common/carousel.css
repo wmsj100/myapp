@@ -11,28 +11,24 @@
   visibility: hidden;
 }
 div#carousel_top {
-  width: 1200px;
-  margin: 0 auto;
-  border: solid 1px;
-  position: relative;
-}
-div#carousel_top > .img_wrap {
+  /*width: 1200px;*/
   width: 960px;
   height: 480px;
-  margin-left: 240px;
-  position: relative;
-  /*overflow: hidden;*/
+  /*top: 0;*/
+  right: 0;
+  /*float: right;*/
+  border: solid 1px;
+  position: absolute;
+  /* 设置轮播图层为-1层，防止覆盖左侧弹出框内容 */
+  z-index: 1;
 }
-div#carousel_top > .img_wrap > ul {
+div#carousel_top > ul.img_wrap {
   display: block;
   zoom: 1;
-  width: 6720px;
-  /*height: @height;*/
+  /*width: @width * @len;*/
   position: absolute;
-  top: 0;
-  left: 0;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -40,23 +36,21 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul > li {
+div#carousel_top > ul.img_wrap > li {
   float: left;
 }
-div#carousel_top > .img_wrap > ul > li > a > img {
+div#carousel_top > ul.img_wrap > li > a > img {
   width: 960px;
   height: 480px;
 }
-div#carousel_top > .btn_wrap {
+div#carousel_top > ul.btn_wrap {
   position: absolute;
   bottom: 30px;
   right: 394px;
-}
-div#carousel_top > .btn_wrap > ul {
   display: block;
   zoom: 1;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -64,10 +58,10 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul > li {
+div#carousel_top > ul.btn_wrap > li {
   float: left;
 }
-div#carousel_top > .btn_wrap > ul > li > a {
+div#carousel_top > ul.btn_wrap > li > a {
   display: block;
   width: 14px;
   height: 14px;
@@ -75,9 +69,9 @@ div#carousel_top > .btn_wrap > ul > li > a {
   border: solid 1px #FF1955;
   border-radius: 14px;
 }
-div#carousel_top > .btn_wrap > ul > li:last-child a {
+div#carousel_top > ul.btn_wrap > li:last-child a {
   margin-right: 0;
 }
-div#carousel_top > .btn_wrap > ul > li .active {
+div#carousel_top > ul.btn_wrap > li .active {
   background-color: #FF1955;
 }

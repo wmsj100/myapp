@@ -1,4 +1,3 @@
-/*@import url('./lib/normalize.css');    引入样式初始化*/
 html,
 body,
 div,
@@ -486,7 +485,7 @@ div#right_bar > ul > li:nth-child(3):hover {
   /*城市列表元素的高度*/
   /*tab面板偏移的高度*/
   /*tab面板偏移的left*/
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
   /*border: solid 1px;*/
@@ -862,7 +861,7 @@ div#nav_bar {
   /* 右侧弹出面板的背景颜色 */
   /* imgbox 的背景图片宽度 */
   /* imgbox 背景图片高度 */
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   /*border: solid 1px;*/
@@ -1201,9 +1200,7 @@ div#nav_bar > div.img_box {
   display: none;
   top: 40px;
   left: 240px;
-}
-div#nav_bar > div.img_box > ul {
-  width: ;
+  z-index: 9;
 }
 div#nav_bar > div.img_box > ul > li {
   /* 通过绝对定位的方式让图片重叠 */
@@ -1229,28 +1226,24 @@ div#nav_bar > div.img_box > ul > li > a > img {
   visibility: hidden;
 }
 div#carousel_top {
-  width: 1200px;
-  margin: 0 auto;
-  border: solid 1px;
-  position: relative;
-}
-div#carousel_top > .img_wrap {
+  /*width: 1200px;*/
   width: 960px;
   height: 480px;
-  margin-left: 240px;
-  position: relative;
-  /*overflow: hidden;*/
+  /*top: 0;*/
+  right: 0;
+  /*float: right;*/
+  border: solid 1px;
+  position: absolute;
+  /* 设置轮播图层为-1层，防止覆盖左侧弹出框内容 */
+  z-index: 1;
 }
-div#carousel_top > .img_wrap > ul {
+div#carousel_top > ul.img_wrap {
   display: block;
   zoom: 1;
-  width: 6720px;
-  /*height: @height;*/
+  /*width: @width * @len;*/
   position: absolute;
-  top: 0;
-  left: 0;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1258,7 +1251,7 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1266,7 +1259,7 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1274,7 +1267,7 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1282,7 +1275,7 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul:after {
+div#carousel_top > ul.img_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1290,23 +1283,21 @@ div#carousel_top > .img_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .img_wrap > ul > li {
+div#carousel_top > ul.img_wrap > li {
   float: left;
 }
-div#carousel_top > .img_wrap > ul > li > a > img {
+div#carousel_top > ul.img_wrap > li > a > img {
   width: 960px;
   height: 480px;
 }
-div#carousel_top > .btn_wrap {
+div#carousel_top > ul.btn_wrap {
   position: absolute;
   bottom: 30px;
   right: 394px;
-}
-div#carousel_top > .btn_wrap > ul {
   display: block;
   zoom: 1;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1314,7 +1305,7 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1322,7 +1313,7 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1330,7 +1321,7 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1338,7 +1329,7 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul:after {
+div#carousel_top > ul.btn_wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -1346,10 +1337,10 @@ div#carousel_top > .btn_wrap > ul:after {
   height: 0;
   visibility: hidden;
 }
-div#carousel_top > .btn_wrap > ul > li {
+div#carousel_top > ul.btn_wrap > li {
   float: left;
 }
-div#carousel_top > .btn_wrap > ul > li > a {
+div#carousel_top > ul.btn_wrap > li > a {
   display: block;
   width: 14px;
   height: 14px;
@@ -1357,10 +1348,15 @@ div#carousel_top > .btn_wrap > ul > li > a {
   border: solid 1px #FF1955;
   border-radius: 14px;
 }
-div#carousel_top > .btn_wrap > ul > li:last-child a {
+div#carousel_top > ul.btn_wrap > li:last-child a {
   margin-right: 0;
 }
-div#carousel_top > .btn_wrap > ul > li .active {
+div#carousel_top > ul.btn_wrap > li .active {
   background-color: #FF1955;
 }
 /*引入carousel轮播样式*/
+div#container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}

@@ -18,62 +18,53 @@ div#carousel_top {
     @btnSize: 14px;
     @borderC: #FF1955;
     @btnMargR: 10px;
-    @len: 7;
-    width: 1200px;
-    margin: 0 auto;
+    @len: 7;    /*width: 1200px;*/
+
+    width: @width;
+    height: @height;    /*top: 0;*/
+    right: 0;    /*float: right;*/
     border: solid 1px;
-    position: relative;
+    position: absolute;    /* 设置轮播图层为-1层，防止覆盖左侧弹出框内容 */
+    z-index: 1;
 
-    &>.img_wrap {
-        width: @width;
-        height: @height;  
-        margin-left: @left;
-        position: relative;
-        /*overflow: hidden;*/
-        &>ul {
-            .clearfix;
-            width: @width * @len;
-            /*height: @height;*/
-            position: absolute;
-            top: 0;
-            left: 0;
-            &>li {
-                float: left;
+    &>ul.img_wrap {
+        .clearfix;
+        /*width: @width * @len;*/
+        position: absolute;
+        &>li {
+            float: left;
 
-                &>a {
-                    &>img {
-                        width: @width;
-                        height: @height;
-                    }
+            &>a {
+                &>img {
+                    width: @width;
+                    height: @height;
                 }
             }
         }
     }
-    &>.btn_wrap {
+    &>ul.btn_wrap {
         position: absolute;
         bottom: 30px;
-        right: (@width - (@btnMargR * (@len - 1) + (@btnSize + 1 * 2) * @len))/2;
-        &>ul{
-            .clearfix;
-            &>li{
-                float: left;
-                &>a{
-                    display: block;
-                    width: @btnSize;
-                    height: @btnSize;
-                    margin-right: @btnMargR;
-                    border: solid 1px @borderC;
-                    border-radius: @btnSize;
+        right: (@width - ((@btnSize + 2 + @btnMargR) * @len - @btnMargR))/2;
+        .clearfix;
 
-                }
-                &:last-child a{
-                margin-right: 0;
-                }
-                .active{
-                    background-color: @borderC;
-                }
+        &>li {
+            float: left;
+
+            &>a {
+                display: block;
+                width: @btnSize;
+                height: @btnSize;
+                margin-right: @btnMargR;
+                border: solid 1px @borderC;
+                border-radius: @btnSize;
             }
-
+            &:last-child a {
+                margin-right: 0;
+            }
+            .active {
+                background-color: @borderC;
+            }
         }
     }
 }

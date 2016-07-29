@@ -31,7 +31,7 @@ div#nav_bar {
   /* 右侧弹出面板的背景颜色 */
   /* imgbox 的背景图片宽度 */
   /* imgbox 背景图片高度 */
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   /*border: solid 1px;*/
@@ -274,9 +274,7 @@ div#nav_bar > div.img_box {
   display: none;
   top: 40px;
   left: 240px;
-}
-div#nav_bar > div.img_box > ul {
-  width: ;
+  z-index: 9;
 }
 div#nav_bar > div.img_box > ul > li {
   /* 通过绝对定位的方式让图片重叠 */

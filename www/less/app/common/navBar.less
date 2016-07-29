@@ -52,7 +52,8 @@ div#nav_bar {
     @imgBoxW: 960px;
     /* imgbox 背景图片高度 */
     @imgBoxH: 480px;
-    width: 1200px;
+
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
     /*border: solid 1px;*/
@@ -279,8 +280,8 @@ div#nav_bar {
         display: none;
         top: @tabH;
         left: 240px;
+        z-index: 9;
         &>ul{
-            width: ;
             &>li{
                 /* 通过绝对定位的方式让图片重叠 */
                 position: absolute;

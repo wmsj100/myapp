@@ -13,8 +13,8 @@ define(['jquery', 'app/model/clearAnimate'], function($, clearAnimate){
             // 获取当前list的下标
             index = $list.index($(this));
              
-            new clearAnimate($(this));  // 清除左侧面板按钮的动画积累
-            new clearAnimate($imgList); // 清除图片框的动画积累
+            new clearAnimate($(this), true);  // 清除左侧面板按钮的动画积累
+            new clearAnimate($imgList, true); // 清除图片框的动画积累
 
             // 给列表按钮添加左偏移动画效果
             $(this).animate({'paddingLeft': '10', },300);

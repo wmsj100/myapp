@@ -36,9 +36,18 @@ http://requirejs.org/docs/api.html
 - div.change_city 切换城市 z-index: 20;
 - div#right_bar 右侧边栏 z-index: 30;
 - div.drop_tab 下拉菜单列表 z-index: 10;
+- div.img_box  下拉菜单的背景图片 z-index: 9;
+- div.carousel_top  轮播图片框 z-index: 1;   
 
 ---
 
 ### 项目bug
 
 - 左侧下来菜单和右侧的弹出面板之间有10px的间隙，会出现闪动情况，后期修复。
+
+---
+
+### 项目总结
+
+- 因为封装的模块函数都是通过原型链来实现继承，所以调用模块时候必须通过`new`的方式来实现。
+- this.autoPlay();    // 自动播放函数 提示不是一个函数，为什么呢，因为我定义了参数 `this.autoPlay: 'left'` 所以，虽然我定义了俩次，但是后面的没有覆盖之前的。
