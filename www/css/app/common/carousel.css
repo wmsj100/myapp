@@ -17,7 +17,8 @@ div#carousel_top {
   /*top: 0;*/
   right: 0;
   /*float: right;*/
-  border: solid 1px;
+  overflow: hidden;
+  /*border: solid 1px;*/
   position: absolute;
   /* 设置轮播图层为-1层，防止覆盖左侧弹出框内容 */
   z-index: 1;
@@ -25,7 +26,7 @@ div#carousel_top {
 div#carousel_top > ul.img_wrap {
   display: block;
   zoom: 1;
-  /*width: @width * @len;*/
+  width: 8640px;
   position: absolute;
 }
 div#carousel_top > ul.img_wrap:after {
@@ -60,6 +61,9 @@ div#carousel_top > ul.btn_wrap:after {
 }
 div#carousel_top > ul.btn_wrap > li {
   float: left;
+  /*&:first-child a {
+                .active;
+            }*/
 }
 div#carousel_top > ul.btn_wrap > li > a {
   display: block;

@@ -7,8 +7,8 @@ define(['jquery', 'model/carouselNoArrow'], function($, carousel){
         ct: $ct,
         imgWrap: $imgWrap,
         btnWrap: $btnWrap,
-        autoPlay: 'right',
-        delay: 1000
+        autoPlay: 'left',
+        delay: 3000
     }
     new carousel(data);
 });

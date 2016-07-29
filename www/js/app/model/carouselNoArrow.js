@@ -8,6 +8,7 @@ define(['jquery','app/model/clearAnimate'], function($, clearAnimate){
         $.extend(this, data);
         this.tag = 0;
         this.timer = 0; // 创建定时器变量
+        this.len = this.imgWrap.children().length;
         this.animateTime = 1000;
         this.width = this.ct.width();
         this.imgWrapRender();   // 添加首尾的俩个list的clone，
@@ -16,90 +17,79 @@ define(['jquery','app/model/clearAnimate'], function($, clearAnimate){
     }
 
     carousel.prototype.imgWrapRender = function(){
-        var imgWrap, $first, $last, len;
+        var imgWrap, $first, $last;
         imgWrap = this.imgWrap;
         $first = imgWrap.find('li:first').clone(true);
         $last = imgWrap.find('li:last').clone(true);
         imgWrap.append($first);
         imgWrap.prepend($last);
-        len = imgWrap.children().length;
-        imgWrap.css({'left': -this.width, 'width': len * this.width});
+        imgWrap.css({'left': -this.width, 'width': (this.len +2) * this.width});
         this.btnWrap.find('a:first').addClass('active');
-        this.len = len; // 把len转换为全局变量
     }
 
     // 事件和触发容器分离
     carousel.prototype.btnOverEvent = function(){
-        var me = this;
+        var index, me;
+        me = this,
 
         this.btnWrap.on('mouseover', 'a', function(){
-            me.tag = me.btnWrap.find('a').index($(this));
-            me.btnAnimate();
+            index = me.btnWrap.find('a').index($(this));
+            // me.btnAnimate(index);
+            me.btnJudge(index);
+            // console.log(index, me.tag)
+            
         });
     }
 
-    carousel.prototype.btnAnimate = function(){
-        var $list;
-        console.log(this.tag);
-        $list = this.btnWrap.children().eq(this.tag);
+    carousel.prototype.btnJudge = function(index){
+        var num;
+        num = index - this.tag;
+        // console.log(num)
+        if(num > 0){
+            this.leftPlay(num);
+        } else if(num < 0) {
+            this.rightPlay(-num);
+        } else {
+            return null;
+        }
+    }
+
+    carousel.prototype.btnAnimate = function(index){
+        var $list, num;
+        num = index | this.tag;
+        $list = this.btnWrap.children().eq(num);
         $list.find('a').addClass('active')
             .parent().siblings()
             .find('a').removeClass('active');
     }
 
     // 自动轮播函数判断
-    carousel.prototype.auto = function(){
+    carousel.prototype.auto = function() {
         var me = this,
             direction = this.autoPlay;
 
-        if(direction === 'left'){
-            this.leftPlay();
-        } else if(direction === 'right') {
-            this.rightPlay();
-        } else {
+        if (direction !== 'left' && direction !== 'right') {
             throw new Error('The value of autoPlay must be "left" or "right"');
-        } 
+        }
+
+        this.timer = setTimeout(function() {
+            if (direction === 'left') {
+                me.leftPlay();
+            } else {
+                me.rightPlay();
+            }
+        }, me.delay + me.animateTime);
     }
 
     // 向左划动
-    carousel.prototype.leftPlay = function(){
-        var me;
+    carousel.prototype.leftPlay = function(num){
+        var me, num;
         me = this;
-        
-        this.timer = setTimeout(function(){
-            me.tag++;
-            me.tagJudge('left');
-        }, me.delay + me.animateTime);
-    }
+        num = num | 1;
+        this.tag += num;
 
-    // 向右划动
-    carousel.prototype.rightPlay = function(){
-        var me = this;
-        
-        this.timer = setTimeout(function(){
-            me.tag--;
-            me.tagJudge('right');
-        }, me.delay + me.animateTime);
-    }
-
-    carousel.prototype.tagJudge = function(status){
-        // this.stop();  
-
-        if(status === 'left'){
-            this.autoLeft();
-        } else if(status === 'right') {
-            this.autoRight();
-        } else {
-            throw new Error('tagJudge(): the value of status must be "left" of "right"');
-        }
-    }
-
-    carousel.prototype.autoLeft = function(){
-        var me = this;
-        // console.log('left')
-        // console.log(this.tag, this.len)
         this.stop();
-        if(this.tag === this.len){
+         if(this.tag === this.len){
             this.tag = 0;
             this.btnAnimate();
             this.imgWrap.animate({'left': '-='  + this.width}, this.animateTime, function(){
@@ -107,26 +97,31 @@ define(['jquery','app/model/clearAnimate'], function($, clearAnimate){
             });
         } else {
             this.btnAnimate();
-            this.imgWrap.animate({'left': '-=' + this.width}, this.animateTime);
+            new clearAnimate(this.imgWrap, true);
+            this.imgWrap.animate({'left': '-=' + this.width * num}, this.animateTime);
         }
         this.auto();
     }
 
-    carousel.prototype.autoRight = function(){
-        var me = this;
-        // console.log('right')
-        // console.log(this.tag, this.len, this.width)
+    // 向右划动
+    carousel.prototype.rightPlay = function(num){
+        var me, num;
+        me = this;
+        num = num |1;
+        me.tag -= num;
+
         this.stop();
-         if(this.tag === -1){
-            this.tag = this.len - 3;
+        if(this.tag === -1){
+            this.tag = this.len - 1;
             // console.log(this.tag);
             this.btnAnimate();
             this.imgWrap.animate({'left': '+=' + this.width}, this.animateTime, function(){
-                me.imgWrap.css({'left': -me.width * (me.len - 2)});
+                me.imgWrap.css({'left': -me.width * (me.len)});
             });
         } else {
             this.btnAnimate();
-            this.imgWrap.animate({'left': '+=' + this.width}, this.animateTime);
+            new clearAnimate(this.imgWrap, true);
+            this.imgWrap.animate({'left': '+=' + this.width * num}, this.animateTime);
         }
         this.auto();
     }
