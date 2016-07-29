@@ -371,32 +371,40 @@ module.exports = function(app) {
         }];
 
         data.process = {
-            one: '#',
-            two: '#',
-            three: '#',
-            four: '#',
-            five: '#',
-            six: '#',
-            seven: '#',
-            eight: '#'
+            'one': '#',
+            'two': '#',
+            'three': '#',
+            'four': '#',
+            'five': '#',
+            'six': '#',
+            'seven': '#',
+            'eight': '#'
+        }
+
+        data.floor = {
+            'title': {
+                'head': '1F',
+                'strong': '婚宴',
+                'span': 'WEDDING BANQUET'
+            }
         }
         
         res.render('index', data);
         // res.send(data);
     });
 
-    app.get('/test', function(req, res){
-        var data = {};
-        data.process = {
-            one: '#',
-            two: '#',
-            three: '#',
-            four: '#',
-            five: '#',
-            six: '#',
-            seven: '#',
-            eight: '#'
-        };
-        res.render('./common/process', data);
-    })
+    // app.get('/test', function(req, res){
+    //     var data = {};
+    //     data.process = {
+    //         one: '#',
+    //         two: '#',
+    //         three: '#',
+    //         four: '#',
+    //         five: '#',
+    //         six: '#',
+    //         seven: '#',
+    //         eight: '#'
+    //     };
+    //     res.render('./common/process', data);
+    // });
 }

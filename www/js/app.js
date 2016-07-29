@@ -15,3 +15,4 @@ require(['common/header']);   // 加载header区模块
 require(['common/navBar']);   // 加载导航栏模块
 require(['common/carousel']); // 加载轮播模块
 require(['common/process']);    // 加载婚礼流程模块
+require(['common/floor']);    // 加载楼层模块
