@@ -381,13 +381,23 @@ module.exports = function(app) {
             'eight': '#'
         }
 
-        data.floor = {
+        data.floor = Mock.mock({
             'title': {
                 'head': '1F',
                 'strong': '婚宴',
                 'span': 'WEDDING BANQUET'
+            },
+            'nav': {
+                'star|3-8': [{
+                    'name': '@cword(4)',
+                    'url': '@url("https", "huntaotao")'
+                }],
+                'theme|3-8': [{
+                    'name': '@cword(4)',
+                    'url': '@url("https", "huntaotao")'
+                }]
             }
-        }
+        });
         
         res.render('index', data);
         // res.send(data);

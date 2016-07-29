@@ -1,0 +1,20 @@
+div#floor > div#floor_one_title {
+  width: 100%;
+  height: 53px;
+  color: #333;
+  line-height: 53px;
+}
+div#floor > div#floor_one_title > h3 {
+  font-size: 24px;
+  color: #ff1955;
+  display: inline-block;
+}
+div#floor > div#floor_one_title > strong {
+  font-size: 22px;
+  padding: 0 7px;
+  font-weight: normal;
+}
+div#floor > div#floor_one_title > span {
+  font-size: 16px;
+  text-transform: uppercase;
+}

@@ -1,23 +1,19 @@
 <div id="carousel_top">
-    <!-- <div class="img_wrap"> -->
-        <ul class="img_wrap">
-            <% carousel_top.forEach(function(item,index){ %>
-            <li data-tag="<%- index %>">
-                <a href="<%- item['url'] %>">
-                    <img src="<%- item['img'] %>" alt="">
-                </a>
-            </li>
-            <% }) %>
-            
-        </ul>
-    <!-- </div> -->
-    <!-- <div class="btn_wrap"> -->
-        <ul class="btn_wrap">
-            <% carousel_top.forEach(function(item,index){ %>
-            <li data-tag="<%- index %>">
-                <a href="<%- item['url'] %>"></a>
-            </li>
-            <% }) %>
-        </ul>
-    <!-- </div> -->
+    <ul class="img_wrap">
+        <% carousel_top.forEach(function(item,index){ %>
+        <li data-tag="<%- index %>">
+            <a href="<%- item['url'] %>">
+                <img src="<%- item['img'] %>" alt="">
+            </a>
+        </li>
+        <% }) %>
+        
+    </ul>
+    <ul class="btn_wrap">
+        <% carousel_top.forEach(function(item,index){ %>
+        <li data-tag="<%- index %>">
+            <a href="<%- item['url'] %>"></a>
+        </li>
+        <% }) %>
+    </ul>
 </div>
