@@ -1,58 +1,56 @@
-    <div id="nav_bar">
+<div id="nav_bar">
+    <div class="wrap">
         <div class="drop_nav">
-                <span>产品/商品分类</span>
+            <span>产品/商品分类</span>
             <div class="drop_tab">
                 <ul class="drop_wrap">
                     <% drop['menu'].forEach(function(item){ %>
-
-                        <li>
-                            <i class="icon"></i>
-                            <span><%- item['name'] %></span>
-                            <i class="arror"></i>
-                            <ul class="tab_right_box">
-                                <% item['info'].forEach(function(val){ %>
+                    <li>
+                        <i class="icon"></i>
+                        <span><%- item['name'] %></span>
+                        <i class="arror"></i>
+                        <ul class="tab_right_box">
+                            <% item['info'].forEach(function(val){ %>
+                            <li>
+                                <h3><%- val['name'] %></h3>
+                                <ul class="tab_info">
+                                    <% val['data'].forEach(function(cell){ %>
                                     <li>
-                                        <h3><%- val['name'] %></h3>
-                                        <ul class="tab_info">
-                                            <% val['data'].forEach(function(cell){ %>
-                                                <li>
-                                                    <a href="<%- cell['url'] %>">
-                                                        <%- cell['name'] %>
-                                                    </a>
-                                                </li>
-
-                                            <% }) %>
-
-                                        </ul>
+                                        <a href="<%- cell['url'] %>">
+                                            <%- cell['name'] %>
+                                        </a>
                                     </li>
-                                <% }) %>
-                                
-                            </ul>
-                        </li>
+                                    <% }) %>
+                                </ul>
+                            </li>
+                            <% }) %>
+                            
+                        </ul>
+                    </li>
                     <% }) %>
                 </ul>
             </div>
-
         </div>
         <div class="nav_menu">
             <ul>
-            <img src="" alt="">
+                <img src="" alt="">
                 <% nav.forEach(function(item){ %>
-                    <li>
-                        <a href="<%- item['url'] %>"><%- item['name'] %></a>
-                    </li>
-                <% }) %> 
+                <li>
+                    <a href="<%- item['url'] %>"><%- item['name'] %></a>
+                </li>
+                <% }) %>
             </ul>
         </div>
         <div class="img_box">
             <ul>
                 <% nav['imgBox'].forEach(function(item){ %>
-                    <li>
-                        <a href="<%- item['url'] %>">
-                            <img src="<%- item['img'] %>" alt="">
-                        </a>
-                    </li>
+                <li>
+                    <a href="<%- item['url'] %>">
+                        <img src="<%- item['img'] %>" alt="">
+                    </a>
+                </li>
                 <% }) %>
             </ul>
         </div>
     </div>
+</div>

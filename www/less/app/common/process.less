@@ -1,0 +1,164 @@
+.clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+div#process {
+
+    @margTop: 480px;
+
+    margin-top: 480px + 20px;
+    padding: 10px 10px 20px 10px;
+    background-color: #fff;
+    position: relative;
+    /*border: solid 1px;*/
+
+    &>div.title {
+        width: 336px;
+        height: 46px;
+        margin-bottom: 10px;
+        background: url(../img/common/sprite.png) -0px -299px no-repeat;
+    }
+    &>ul {
+        /*border: solid 1px;*/
+        .clearfix;
+
+        &>li {
+            width: 116px;
+            height: 56px;
+            float: left;
+            text-align: center;
+            position: relative;
+            opacity: 0.8;
+            margin-right: 15px;
+            &:hover{
+                        opacity: 1;
+                    }
+
+            &>p.summary {
+                &>span {
+                    font-size: 14px;
+                    &>strong {
+                        font-weight: normal;
+                        font-size: 30px;
+                        padding-right: 2px;
+                        /*text-align: left;*/
+                    }
+                }
+            }
+            &>p.target {
+                &>a {
+                    font-size: 16px;
+                    font-weight: bold;
+                    
+
+                }
+            }
+            &:nth-child(1){
+                span, a{
+                    color: #fe9f21;
+                }
+                i{
+                    background: url(../img/common/sprite.png) -428px -40px no-repeat;
+                }  
+            }
+            &:nth-child(2){
+                span, a{
+                    color: #fd6862;
+                }
+                i{
+                    background: url(../img/common/sprite.png) -411px -40px no-repeat;
+                } 
+                }
+            &:nth-child(3){
+                span, a{
+                    color: #ff7fc0;
+                } 
+                i{
+                    background: url(../img/common/sprite.png) -377px -40px no-repeat;
+                }  
+            }
+            &:nth-child(4){
+                span, a{
+                    color: #4dc7ee;
+                }  
+                i{
+                    background: url(../img/common/sprite.png) -445px -40px no-repeat;
+                } 
+            }
+            &:nth-child(5){
+                span, a{
+                    color: #eb6647;
+                }  
+                i{
+                    background: url(../img/common/sprite.png) -360px -40px no-repeat;
+                } 
+            }
+            &:nth-child(6){
+                span, a{
+                    color: #f8c423;
+                }  
+                i{
+                    background: url(../img/common/sprite.png) -462px -40px no-repeat;
+                } 
+            }
+            &:nth-child(7){
+                span, a{
+                    color: #8692f8;
+                }  
+                i{
+                    background: url(../img/common/sprite.png) -360px -40px no-repeat;
+                } 
+            }
+            &:nth-child(8){
+                span, a{
+                    color: #eb6647;
+                }  
+                i{
+                    background: url(../img/common/sprite.png) -394px -40px no-repeat;
+                } 
+            }
+
+            &>i {
+                display: block;
+                width: 17px;
+                height: 38px;
+                position: absolute;
+                /*border: solid 1px;*/
+                top: 18px;
+                right: -20px;
+            }
+        }
+    }
+    &>div.user{
+        position: absolute;
+        bottom: 18px;
+        right: 35px;
+        a{
+            padding-right: 10px;
+            color: #666;
+            &:hover{
+                color: #ff3b6d;
+                text-decoration: underline;
+            }
+        }
+        span.info{
+            font-size: 14px;
+            color: #fe9f21;
+            /*margin-top: 10px;*/
+            margin: 6px 6px 2px 0;
+            display: block;
+            /*margin-left: -2px;*/
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

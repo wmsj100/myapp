@@ -23,8 +23,8 @@ div#carousel_top {
     width: @width;
     height: @height;    /*top: 0;*/
     right: 0;    /*float: right;*/
+    top: -@height - 20px;
     overflow: hidden;
-    /*border: solid 1px;*/
     position: absolute;    /* 设置轮播图层为-1层，防止覆盖左侧弹出框内容 */
     z-index: 1;
 
@@ -60,9 +60,7 @@ div#carousel_top {
                 border: solid 1px @borderC;
                 border-radius: @btnSize;
             }
-            /*&:first-child a {
-                .active;
-            }*/
+            
             &:last-child a {
                 margin-right: 0;
             }

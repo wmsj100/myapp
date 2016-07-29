@@ -12,190 +12,225 @@
     }
 }
 #header {
-    @logoW: 190px;  /*logo图片的宽度*/
-    @logoH: 59px;   /*logo图片的高度*/
-    @linkC: #ff3b6d;    /*链接的激活颜色*/
-    @defaultC: #666;    /*链接的默认颜色*/
-    @borderC: #eee;     /*边框的颜色*/
-    @tabPadding: 5px 10px;  /*tab内部的元素间距*/
-    @listW: 45px;   /*城市列表元素的宽度*/
-    @listH: 24px;   /*城市列表元素的高度*/
-    @top: 63px;     /*tab面板偏移的高度*/
-    @left: 45px;    /*tab面板偏移的left*/
+    @logoW: 190px;
+    /*logo图片的宽度*/
+    @logoH: 59px;
+    /*logo图片的高度*/
+    @linkC: #ff3b6d;
+    /*链接的激活颜色*/
+    @defaultC: #666;
+    /*链接的默认颜色*/
+    @borderC: #eee;
+    /*边框的颜色*/
+    @tabPadding: 5px 10px;
+    /*tab内部的元素间距*/
+    @listW: 45px;
+    /*城市列表元素的宽度*/
+    @listH: 24px;
+    /*城市列表元素的高度*/
+    @top: 63px;
+    /*tab面板偏移的高度*/
+    @left: 45px;    
+    /*tab面板偏移的left*/
     width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    /*border: solid 1px;*/
-    .clearfix;
+    background-color: #fff;
 
-    .linkStyle {
-        color: @defaultC;
+    &>div.wrap {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 20px;    
+        padding-bottom: 40px;    
+        /*border: solid 1px;*/
+        .clearfix;
 
-        &:hover {
-            color: @linkC;
-            text-decoration: underline;
+        .linkStyle {
+            color: @defaultC;
+
+            &:hover {
+                color: @linkC;
+                text-decoration: underline;
+            }
         }
-    }
-    &>div.logo {
-        float: left;
-
-        &>a {
-            display: block;
-            width: @logoW;
-            height: @logoH;
-            background: url(../img/common/sprite.png) -0px -240px no-repeat;
-        }
-    }
-    &>div.city {
-        height: @logoH;
-        float: left;       
-        padding-left: 50px;
-        position: relative;
-
-        &>h3 {
-            margin-top: 10px;
+        &>div.logo {
+            float: left;
 
             &>a {
-                color: @linkC;
-                opacity: 0.8;
-                font-size: 16px;
-
-                &:hover {
-                    opacity: 1;
-                }
+                display: block;
+                width: @logoW;
+                height: @logoH;
+                background: url(../img/common/sprite.png) -0px -240px no-repeat;
             }
         }
-        &>div.change_city {
-            &>p {
-                cursor: pointer;
-                color: @defaultC;
+        &>div.city {
+            height: @logoH;
+            float: left;
+            padding-left: 50px;
+            position: relative;
+
+            &>h3 {
                 margin-top: 10px;
-                padding-bottom: 10px;
-                &:hover {
+
+                &>a {
                     color: @linkC;
-                }
-            }
-            &>div.city_info {
-                position: absolute;
-                top: @top;
-                left: @left;
-                border: solid 1px #ddd;
-                border-radius: 5px;
-                background-color: #fff;
-                display: none;
-                z-index: 20;
+                    opacity: 0.8;
+                    font-size: 16px;
 
-                &>h3 {
-                    font-size: 14px;
-                    padding: 10px;
-                    padding-bottom: 5px;
-                    border-bottom: solid 1px @borderC;
-
-                    &>a {
-                        .linkStyle;
+                    &:hover {
+                        opacity: 1;
                     }
                 }
-                &>p.hot_city {
-                    font-size: 14px;
-                    padding: @tabPadding;
-                }
-                &>ul {
-                    .clearfix;
-                    padding: @tabPadding;
-                    padding-top: 0;
-                    width: @listW*7;
+            }
+            &>div.change_city {
+                &>p {
+                    cursor: pointer;
+                    color: @defaultC;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
 
-                    &>li {
-                        float: left;
-                        width: @listW;
-                        height: @listH;
-                        line-height: @listH;
-                        text-align: center;
+                    &:hover {
+                        color: @linkC;
+                    }
+                }
+                &>div.city_info {
+                    position: absolute;
+                    top: @top;
+                    left: @left;
+                    border: solid 1px #ddd;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    display: none;
+                    z-index: 20;
+
+                    &>h3 {
+                        font-size: 14px;
+                        padding: 10px;
+                        padding-bottom: 5px;
+                        border-bottom: solid 1px @borderC;
+
+                        &>a {
+                            .linkStyle;
+                        }
+                    }
+                    &>p.hot_city {
+                        font-size: 14px;
+                        padding: @tabPadding;
+                    }
+                    &>ul {
+                        .clearfix;
+                        padding: @tabPadding;
+                        padding-top: 0;
+                        width: @listW*7;
+
+                        &>li {
+                            float: left;
+                            width: @listW;
+                            height: @listH;
+                            line-height: @listH;
+                            text-align: center;
+
+                            &>a {
+                                .linkStyle;
+                            }
+                        }
+                    }
+                    &>p.all_city {
+                        font-size: 14px;
+                        margin-left: 10px;
+                        margin-bottom: 10px;
 
                         &>a {
                             .linkStyle;
                         }
                     }
                 }
-                &>p.all_city {
-                    font-size: 14px;
-                    margin-left: 10px;
-                    margin-bottom: 10px;
-
-                    &>a {
-                        .linkStyle;
-                    }
-                }
             }
         }
-    }
-    &>div.search {
-        @inputW: 408px;     /*输入框的宽度*/
-        @btnW: 92px;        /*搜索按钮的宽度*/
-        @btnC: #fff;        /*按钮颜色*/
-        @height: 40px;      /*输入框和搜索按钮的高度*/
-        @padding: 10px;     /*输入框内部的padding值*/
-        @borderC: #FF8286;  /*输入框的边框颜色*/
-        @borderAcrive: #FF1955;     /*输入框的边框激活状态的颜色*/
-        @radius: 5px;     /*设置边框的圆角*/
-        float: right;
+        &>div.search {
+            @inputW: 408px;
 
-        &>ul.input_box {
-            .clearfix;
-            li {
-                float: left;
-                &>input {
-                    width: @inputW;
-                    height: @height;
-                    display: inline-block;
-                    padding-left: @padding;
-                    border: solid 2px @borderC;
-                    border-radius: @radius 0 0 @radius;
+            /*输入框的宽度*/
+            @btnW: 92px;
 
-                    &:focus {
-                        border-color: @borderAcrive;
-                        border-right-color: @borderC;
-                        outline: none;
-                    }
-                }
-                &>a {
-                    display: inline-block;
-                    width: @btnW;
-                    height: @height;
-                    color: @btnC;
-                    line-height: @height;
-                    text-align: center;
-                    font-size: 16px;
-                    border: solid 2px @borderC;
-                    border-radius: 0 @radius @radius 0;
-                    background-color: @borderC;
-                    &:hover{
-                        border-color: @borderAcrive;
-                        background-color: @borderAcrive;
-                    }
-                }
-            }
-        }
+            /*搜索按钮的宽度*/
+            @btnC: #fff;
 
-        &>div.hot_word{
-            &>ul{
+            /*按钮颜色*/
+            @height: 40px;
+
+            /*输入框和搜索按钮的高度*/
+            @padding: 10px;
+
+            /*输入框内部的padding值*/
+            @borderC: #FF8286;
+
+            /*输入框的边框颜色*/
+            @borderAcrive: #FF1955;
+
+            /*输入框的边框激活状态的颜色*/
+            @radius: 5px;     /*设置边框的圆角*/
+            float: right;
+
+            &>ul.input_box {
                 .clearfix;
-                width: @inputW;
-                margin-left: 10px;
-                padding-top: 10px;
-                margin-bottom: -10px;
-                &>li{
+
+                li {
                     float: left;
-                    padding: 0 10px;
-                    border-right: solid 1px;
-                &:last-child{
-                    border-right: none;
-                }
-                    &>a{
-                        .linkStyle;
+
+                    &>input {
+                        width: @inputW;
+                        height: @height;
+                        display: inline-block;
+                        padding-left: @padding;
+                        border: solid 2px @borderC;
+                        border-radius: @radius 0 0 @radius;
+
+                        &:focus {
+                            border-color: @borderAcrive;
+                            border-right-color: @borderC;
+                            outline: none;
+                        }
                     }
-                    .active{
-                        color: @linkC;
+                    &>a {
+                        display: inline-block;
+                        width: @btnW;
+                        height: @height;
+                        color: @btnC;
+                        line-height: @height;
+                        text-align: center;
+                        font-size: 16px;
+                        border: solid 2px @borderC;
+                        border-radius: 0 @radius @radius 0;
+                        background-color: @borderC;
+
+                        &:hover {
+                            border-color: @borderAcrive;
+                            background-color: @borderAcrive;
+                        }
+                    }
+                }
+            }
+            &>div.hot_word {
+                &>ul {
+                    .clearfix;
+                    width: @inputW;
+                    margin-left: 10px;
+                    padding-top: 10px;
+                    margin-bottom: -10px;
+
+                    &>li {
+                        float: left;
+                        padding: 0 10px;
+                        border-right: solid 1px;
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                        &>a {
+                            .linkStyle;
+                        }
+                        .active {
+                            color: @linkC;
+                        }
                     }
                 }
             }

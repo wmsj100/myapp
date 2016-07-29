@@ -6,17 +6,13 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	<style>
-	body{
-		min-height: 1200px;
-	}
-	</style>
 	<%- include common/topbar %>
+	<%- include common/rightbar %>
+	<%- include common/header %>
+	<%- include common/navbar %>
 	<div id="container">
-		<%- include common/rightbar %>
-		<%- include common/header %>
-		<%- include common/navbar %>
 		<%- include common/carousel %>
+		<%- include common/process %>
 	</div>
 
 	<script data-main="js/app" src="js/lib/require.js"></script>

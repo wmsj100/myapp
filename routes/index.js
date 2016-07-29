@@ -1,8 +1,8 @@
 module.exports = function(app) {
 
-    app.get('/test', function(req, res) {
-        res.render('tests/index');
-    })
+    // app.get('/test', function(req, res) {
+    //     res.render('tests/index');
+    // })
 
     app.get('/', function(req, res) {
         var Mock = require('mockjs'),
@@ -368,9 +368,35 @@ module.exports = function(app) {
         },{
             'img': 'img/common/carousel_top/131031763274984078.jpg',
             'url': '#'
-        }]
+        }];
+
+        data.process = {
+            one: '#',
+            two: '#',
+            three: '#',
+            four: '#',
+            five: '#',
+            six: '#',
+            seven: '#',
+            eight: '#'
+        }
         
         res.render('index', data);
         // res.send(data);
     });
+
+    app.get('/test', function(req, res){
+        var data = {};
+        data.process = {
+            one: '#',
+            two: '#',
+            three: '#',
+            four: '#',
+            five: '#',
+            six: '#',
+            seven: '#',
+            eight: '#'
+        };
+        res.render('./common/process', data);
+    })
 }

@@ -12,287 +12,333 @@
     }
 }
 div#nav_bar {
+
     /*tab按钮的高度*/
     @tabH: 40px;
+
     /*tab按钮的宽度*/
     @tabW: 220px;
+
     /*tab按钮的背景颜色*/
     @tabBgC: #FF1955;
+
     /*tab按钮的颜色*/
     @tabC: #fff;
+
     /*tab按钮的左偏移*/
     @padLeft: 20px;
+
     /*第一级菜单字体颜色*/
-    @listOneC: #5F5F5F;    
+    @listOneC: #5F5F5F;
+
     /*第一级菜单list宽度*/
     @listOneW: 230px;
+
     /*第一级菜单list高度*/
     @listOneH: 54px;
+
     /*icon图片的尺寸*/
     @iconSize: 20px;
+
     /*第一级菜单list的背景颜色*/
     @listOneBgC: #FF7B9E;
+
     /* 右侧弹出面板宽度 */
     @tabRightW: 520px;
+
     /* 右侧弹出面板高度 */
     @tabRightH: 480px;
+
     /* 右侧弹出面板顶部padding值 */
     @tabPadTop: 10px;
+
     /* link 文字颜色 */
     @linkC: #666;
+
     /* link hover 时候的颜色 */
     @linkHC: #FD2D63;
+
     /* 标题文字的颜色 */
     @linkTitle: #333;
+
     /* 边框颜色 */
     @borderC: #999;
+
     /* 右侧弹出面板的背景颜色 */
     @tabRightBgC: #F8F8F8;
+
     /* imgbox 的背景图片宽度 */
     @imgBoxW: 960px;
+
     /* imgbox 背景图片高度 */
     @imgBoxH: 480px;
-
     width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-    /*border: solid 1px;*/
-    position: relative;
-    .clearfix;
+    background-color: #fff;
 
-    .drop_nav {
-        float: left;
-        height: @tabH;
-        width: @tabW;
-        opacity: 0.8;
-        cursor: pointer;
-        padding-left: @padLeft;
+    &>div.wrap {
+        width: 1200px;
+        margin: 0 auto;
+        /*margin-top: 20px;    */
+        /*border: solid 1px;*/
         position: relative;
-        background-color: @tabBgC;
-        border-radius: 6px 6px 0 0;
-        &>span {
-            display: block;
-            color: @tabC;
-            font-size: 16px;
-            line-height: @tabH;  
-        }
-        &:hover {
+        .clearfix;
+
+        &>div.drop_nav {
+            float: left;
+            height: @tabH;
+            width: @tabW;
+            opacity: 0.8;
+            cursor: pointer;
+            padding-left: @padLeft;
+            position: relative;
+            background-color: @tabBgC;
+            border-radius: 6px 6px 0 0;
+
+            &>span {
+                display: block;
+                color: @tabC;
+                font-size: 16px;
+                line-height: @tabH;
+            }
+            &:hover {
                 opacity: 1;
             }
-        &>div.drop_tab {
-            position: absolute;
-            top: @tabH;
-            left: 0;
-            width: @tabW + @padLeft;
-            /*border: solid 1px green;*/
-            color: @listOneC;
-            z-index: 10;
+            &>div.drop_tab {
+                position: absolute;
+                top: @tabH;
+                left: 0;
+                width: @tabW + @padLeft;
+                color: @listOneC;
+                background-color: #fff;
+                z-index: 10;
 
-            &>ul {
-                height: 480px;
-                &>li {
-                    width: @listOneW;
-                    height: @listOneH;
-                    line-height: @listOneH;
-                    cursor: pointer;
+                &>ul {
+                    height: 480px;
 
-                    &:hover{
+                    &>li {
+                        width: @listOneW;
+                        height: @listOneH;
+                        line-height: @listOneH;
+                        cursor: pointer;
+
+                        &:hover {
                             background-color: @listOneBgC;
                         }
-                    /* 鼠标hover list时候，字体颜色改变 */
-                    &:hover>span{
-                        color: #fff;
-                    }
-                    &>span {
-                        font-size: 14px;
-                    }
-                    
-                    &>i{
-                        display: block;
-                        width: @iconSize;
-                        height: @iconSize;
-                        margin-top: (@listOneH - @iconSize)/2;
-                    }
-                    &>i.icon{
-                        float: left;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                    }
-                    /* 初始化时候隐藏箭头图标 */
-                    &>i.arror{
-                        display: none;
-                    }
-                    /* 鼠标hover时候箭头图标显示 */
-                    &:hover>i.arror{
-                        display: block;
-                        float: right;
-                        margin-right: 10px;
-                        background: url(../img/common/sprite.png) -441px -174px no-repeat;
-                    }
-                    /* nav1 */
-                    &:nth-child(1)>i.icon{
-                        background: url(../img/common/sprite.png) -465px -116px no-repeat;  
-                    }
-                    /* nav10 */
-                    &:nth-child(1):hover>i.icon{
-                        background: url(../img/common/sprite.png) -380px -217px no-repeat;
-                    }
-                    /* nav2 */
-                    &:nth-child(2)>i.icon{
-                        background: url(../img/common/sprite.png) -461px -151px no-repeat; 
-                    }
-                    /* nav20 */
-                    &:nth-child(2):hover>i.icon{
-                        background: url(../img/common/sprite.png) -400px -217px no-repeat;
-                    }
-                    /* nav3 */
-                    &:nth-child(3)>i.icon{
-                        background: url(../img/common/sprite.png) -461px -174px no-repeat;  
-                    }
-                    /* nav30 */
-                    &:nth-child(3):hover>i.icon{
-                        background: url(../img/common/sprite.png) -420px -217px no-repeat;
-                    }
-                    /* nav4 */
-                    &:nth-child(4)>i.icon{
-                        background: url(../img/common/sprite.png) -380px -197px no-repeat;  
-                    }
-                    /* nav40 */
-                    &:nth-child(4):hover>i.icon{
-                        background: url(../img/common/sprite.png) -440px -217px no-repeat;
-                    }
-                    /* nav5 */
-                    &:nth-child(5)>i.icon{
-                        background: url(../img/common/sprite.png) -420px -197px no-repeat;  
-                    }
-                    /* nav50 */
-                    &:nth-child(5):hover>i.icon{
-                        background: url(../img/common/sprite.png) -460px -217px no-repeat;
-                    }
-                    /* nav6 */
-                    &:nth-child(6)>i.icon{
-                        background: url(../img/common/sprite.png) -440px -237px no-repeat;  
-                    }
-                    /* nav60 */
-                    &:nth-child(6):hover>i.icon{
-                        background: url(../img/common/sprite.png) -420px -237px no-repeat;
-                    }
-                    /* nav7 */
-                    &:nth-child(7)>i.icon{
-                        background: url(../img/common/sprite.png) -460px -197px no-repeat;  
-                    }
-                    /* nav70 */
-                    &:nth-child(7):hover>i.icon{
-                        background: url(../img/common/sprite.png) -380px -237px no-repeat;
-                    }
-                    /* nav8 */
-                    &:nth-child(8)>i.icon{
-                        background: url(../img/common/sprite.png) -360px -217px no-repeat;  
-                    }
-                    /* nav80 */
-                    &:nth-child(8):hover>i.icon{
-                        background: url(../img/common/sprite.png) -400px -237px no-repeat;
-                    }
-                    &>ul.tab_right_box {
-                        display: none;
-                        position: absolute;
-                        top: 0;
-                        left: 240px;
-                        width: @tabRightW;
-                        height: @tabRightH - @tabPadTop;
-                        padding: 0 20px;
-                        /*padding-left: 30px;*/
-                        /*padding-right: 20px;*/
-                        padding-top: @tabPadTop;
-                        background-color: @tabRightBgC;
-                        opacity: 0.9;
 
-                        &>li{
-                            padding: 0;
-                            margin: 0;
-                            line-height: 20px;
+                        /* 鼠标hover list时候，字体颜色改变 */
+                        &:hover>span {
+                            color: #fff;
+                        }
+                        &>span {
+                            font-size: 14px;
+                        }
+                        &>i {
+                            display: block;
+                            width: @iconSize;
+                            height: @iconSize;
+                            margin-top: (@listOneH - @iconSize)/2;
+                        }
+                        &>i.icon {
+                            float: left;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
 
-                            &>h3{
-                                font-size: 14px;
-                                border-bottom: solid 1px @borderC;
-                                padding-bottom: 10px;
-                                margin-top: 10px;
-                            }
-                            &>ul.tab_info{
-                               .clearfix;
-                               margin-top: 10px;
+                        /* 初始化时候隐藏箭头图标 */
+                        &>i.arror {
+                            display: none;
+                        }
 
-                               &>li{
-                                float: left;
-                                padding: 0 10px;
-                                border-right: solid 1px @borderC;
+                        /* 鼠标hover时候箭头图标显示 */
+                        &:hover>i.arror {
+                            display: block;
+                            float: right;
+                            margin-right: 10px;
+                            background: url(../img/common/sprite.png) -441px -174px no-repeat;
+                        }
 
-                                &>a{
-                                    font-size: 12px;
-                                    color: @linkC;
-                                    &:hover{
-                                        color: @linkHC;
-                                        text-decoration: underline;
+                        /* nav1 */
+                        &:nth-child(1)>i.icon {
+                            background: url(../img/common/sprite.png) -465px -116px no-repeat;
+                        }
+
+                        /* nav10 */
+                        &:nth-child(1):hover>i.icon {
+                            background: url(../img/common/sprite.png) -380px -217px no-repeat;
+                        }
+
+                        /* nav2 */
+                        &:nth-child(2)>i.icon {
+                            background: url(../img/common/sprite.png) -461px -151px no-repeat;
+                        }
+
+                        /* nav20 */
+                        &:nth-child(2):hover>i.icon {
+                            background: url(../img/common/sprite.png) -400px -217px no-repeat;
+                        }
+
+                        /* nav3 */
+                        &:nth-child(3)>i.icon {
+                            background: url(../img/common/sprite.png) -461px -174px no-repeat;
+                        }
+
+                        /* nav30 */
+                        &:nth-child(3):hover>i.icon {
+                            background: url(../img/common/sprite.png) -420px -217px no-repeat;
+                        }
+
+                        /* nav4 */
+                        &:nth-child(4)>i.icon {
+                            background: url(../img/common/sprite.png) -380px -197px no-repeat;
+                        }
+
+                        /* nav40 */
+                        &:nth-child(4):hover>i.icon {
+                            background: url(../img/common/sprite.png) -440px -217px no-repeat;
+                        }
+
+                        /* nav5 */
+                        &:nth-child(5)>i.icon {
+                            background: url(../img/common/sprite.png) -420px -197px no-repeat;
+                        }
+
+                        /* nav50 */
+                        &:nth-child(5):hover>i.icon {
+                            background: url(../img/common/sprite.png) -460px -217px no-repeat;
+                        }
+
+                        /* nav6 */
+                        &:nth-child(6)>i.icon {
+                            background: url(../img/common/sprite.png) -440px -237px no-repeat;
+                        }
+
+                        /* nav60 */
+                        &:nth-child(6):hover>i.icon {
+                            background: url(../img/common/sprite.png) -420px -237px no-repeat;
+                        }
+
+                        /* nav7 */
+                        &:nth-child(7)>i.icon {
+                            background: url(../img/common/sprite.png) -460px -197px no-repeat;
+                        }
+
+                        /* nav70 */
+                        &:nth-child(7):hover>i.icon {
+                            background: url(../img/common/sprite.png) -380px -237px no-repeat;
+                        }
+
+                        /* nav8 */
+                        &:nth-child(8)>i.icon {
+                            background: url(../img/common/sprite.png) -360px -217px no-repeat;
+                        }
+
+                        /* nav80 */
+                        &:nth-child(8):hover>i.icon {
+                            background: url(../img/common/sprite.png) -400px -237px no-repeat;
+                        }
+                        &>ul.tab_right_box {
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 240px;
+                            width: @tabRightW;
+                            height: @tabRightH - @tabPadTop;
+                            padding: 0 20px;                        /*padding-left: 30px;*/
+
+                            /*padding-right: 20px;*/
+                            padding-top: @tabPadTop;
+                            background-color: @tabRightBgC;
+                            opacity: 0.9;
+
+                            &>li {
+                                padding: 0;
+                                margin: 0;
+                                line-height: 20px;
+
+                                &>h3 {
+                                    font-size: 14px;
+                                    border-bottom: solid 1px @borderC;
+                                    padding-bottom: 10px;
+                                    margin-top: 10px;
+                                }
+                                &>ul.tab_info {
+                                    .clearfix;
+                                    margin-top: 10px;
+
+                                    &>li {
+                                        float: left;
+                                        padding: 0 10px;
+                                        border-right: solid 1px @borderC;
+
+                                        &>a {
+                                            font-size: 12px;
+                                            color: @linkC;
+
+                                            &:hover {
+                                                color: @linkHC;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    &>li:last-child {
+                                        border-right: none;
                                     }
                                 }
-                               }
-                               &>li:last-child{
-                                border-right: none;
-                               }
                             }
                         }
                     }
                 }
             }
         }
-    }
+        &>div.nav_menu {
+            float: left;
+            margin-left: 20px;
+            background-color: #fff;
 
-    &>div.nav_menu{
-        float: left;
-        margin-left: 20px;
+            &>ul {
+                .clearfix;
 
-        &>ul{
-            .clearfix;
+                &>li {
+                    height: @tabH;
+                    float: left;
+                    margin: 0 10px;
+                    padding: 0 9px;
 
-            &>li{
-                height: @tabH;
-                float: left;
-                margin: 0 10px;
-                padding: 0 9px;
-                &>a{
-                    display: block;
-                    line-height: @tabH;
-                    color: @linkC;
-                    font-size: 18px;
-                    &:hover{
-                        color: @linkHC;
+                    &>a {
+                        display: block;
+                        line-height: @tabH;
+                        color: @linkC;
+                        font-size: 18px;
+
+                        &:hover {
+                            color: @linkHC;
+                        }
                     }
                 }
             }
         }
-    }
+        &>div.img_box {
+            position: absolute;
+            width: @imgBoxW;
+            height: @imgBoxH;        /* 图片容器默认隐藏 */
+            display: none;
+            top: @tabH;
+            left: 240px;
+            z-index: 9;
 
-    &>div.img_box{
-        position: absolute;
-        width: @imgBoxW;
-        height: @imgBoxH;
-        /* 图片容器默认隐藏 */
-        display: none;
-        top: @tabH;
-        left: 240px;
-        z-index: 9;
-        &>ul{
-            &>li{
-                /* 通过绝对定位的方式让图片重叠 */
-                position: absolute;
-                top: 0;
-                left: 0;
-                
-                &>a{
+            &>ul {
+                &>li {
 
-                    &>img{
-                        width: @imgBoxW;
-                        height: @imgBoxH;
+                    /* 通过绝对定位的方式让图片重叠 */
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    &>a {
+                        &>img {
+                            width: @imgBoxW;
+                            height: @imgBoxH;
+                        }
                     }
                 }
             }

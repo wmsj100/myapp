@@ -34,17 +34,13 @@ define(['jquery','app/model/clearAnimate'], function($, clearAnimate){
 
         this.btnWrap.on('mouseover', 'a', function(){
             index = me.btnWrap.find('a').index($(this));
-            // me.btnAnimate(index);
             me.btnJudge(index);
-            // console.log(index, me.tag)
-            
         });
     }
 
     carousel.prototype.btnJudge = function(index){
         var num;
         num = index - this.tag;
-        // console.log(num)
         if(num > 0){
             this.leftPlay(num);
         } else if(num < 0) {
@@ -113,7 +109,6 @@ define(['jquery','app/model/clearAnimate'], function($, clearAnimate){
         this.stop();
         if(this.tag === -1){
             this.tag = this.len - 1;
-            // console.log(this.tag);
             this.btnAnimate();
             this.imgWrap.animate({'left': '+=' + this.width}, this.animateTime, function(){
                 me.imgWrap.css({'left': -me.width * (me.len)});

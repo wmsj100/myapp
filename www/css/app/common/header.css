@@ -22,13 +22,18 @@
   /*tab面板偏移的高度*/
   /*tab面板偏移的left*/
   width: 100%;
+  background-color: #fff;
+}
+#header > div.wrap {
+  width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
   /*border: solid 1px;*/
   display: block;
   zoom: 1;
 }
-#header:after {
+#header > div.wrap:after {
   content: "";
   display: block;
   clear: both;
@@ -36,49 +41,49 @@
   height: 0;
   visibility: hidden;
 }
-#header .linkStyle {
+#header > div.wrap .linkStyle {
   color: #666;
 }
-#header .linkStyle:hover {
+#header > div.wrap .linkStyle:hover {
   color: #ff3b6d;
   text-decoration: underline;
 }
-#header > div.logo {
+#header > div.wrap > div.logo {
   float: left;
 }
-#header > div.logo > a {
+#header > div.wrap > div.logo > a {
   display: block;
   width: 190px;
   height: 59px;
   background: url(../img/common/sprite.png) 0px -240px no-repeat;
 }
-#header > div.city {
+#header > div.wrap > div.city {
   height: 59px;
   float: left;
   padding-left: 50px;
   position: relative;
 }
-#header > div.city > h3 {
+#header > div.wrap > div.city > h3 {
   margin-top: 10px;
 }
-#header > div.city > h3 > a {
+#header > div.wrap > div.city > h3 > a {
   color: #ff3b6d;
   opacity: 0.8;
   font-size: 16px;
 }
-#header > div.city > h3 > a:hover {
+#header > div.wrap > div.city > h3 > a:hover {
   opacity: 1;
 }
-#header > div.city > div.change_city > p {
+#header > div.wrap > div.city > div.change_city > p {
   cursor: pointer;
   color: #666;
   margin-top: 10px;
   padding-bottom: 10px;
 }
-#header > div.city > div.change_city > p:hover {
+#header > div.wrap > div.city > div.change_city > p:hover {
   color: #ff3b6d;
 }
-#header > div.city > div.change_city > div.city_info {
+#header > div.wrap > div.city > div.change_city > div.city_info {
   position: absolute;
   top: 63px;
   left: 45px;
@@ -88,31 +93,31 @@
   display: none;
   z-index: 20;
 }
-#header > div.city > div.change_city > div.city_info > h3 {
+#header > div.wrap > div.city > div.change_city > div.city_info > h3 {
   font-size: 14px;
   padding: 10px;
   padding-bottom: 5px;
   border-bottom: solid 1px #eee;
 }
-#header > div.city > div.change_city > div.city_info > h3 > a {
+#header > div.wrap > div.city > div.change_city > div.city_info > h3 > a {
   color: #666;
 }
-#header > div.city > div.change_city > div.city_info > h3 > a:hover {
+#header > div.wrap > div.city > div.change_city > div.city_info > h3 > a:hover {
   color: #ff3b6d;
   text-decoration: underline;
 }
-#header > div.city > div.change_city > div.city_info > p.hot_city {
+#header > div.wrap > div.city > div.change_city > div.city_info > p.hot_city {
   font-size: 14px;
   padding: 5px 10px;
 }
-#header > div.city > div.change_city > div.city_info > ul {
+#header > div.wrap > div.city > div.change_city > div.city_info > ul {
   display: block;
   zoom: 1;
   padding: 5px 10px;
   padding-top: 0;
   width: 315px;
 }
-#header > div.city > div.change_city > div.city_info > ul:after {
+#header > div.wrap > div.city > div.change_city > div.city_info > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -120,33 +125,33 @@
   height: 0;
   visibility: hidden;
 }
-#header > div.city > div.change_city > div.city_info > ul > li {
+#header > div.wrap > div.city > div.change_city > div.city_info > ul > li {
   float: left;
   width: 45px;
   height: 24px;
   line-height: 24px;
   text-align: center;
 }
-#header > div.city > div.change_city > div.city_info > ul > li > a {
+#header > div.wrap > div.city > div.change_city > div.city_info > ul > li > a {
   color: #666;
 }
-#header > div.city > div.change_city > div.city_info > ul > li > a:hover {
+#header > div.wrap > div.city > div.change_city > div.city_info > ul > li > a:hover {
   color: #ff3b6d;
   text-decoration: underline;
 }
-#header > div.city > div.change_city > div.city_info > p.all_city {
+#header > div.wrap > div.city > div.change_city > div.city_info > p.all_city {
   font-size: 14px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
-#header > div.city > div.change_city > div.city_info > p.all_city > a {
+#header > div.wrap > div.city > div.change_city > div.city_info > p.all_city > a {
   color: #666;
 }
-#header > div.city > div.change_city > div.city_info > p.all_city > a:hover {
+#header > div.wrap > div.city > div.change_city > div.city_info > p.all_city > a:hover {
   color: #ff3b6d;
   text-decoration: underline;
 }
-#header > div.search {
+#header > div.wrap > div.search {
   /*输入框的宽度*/
   /*搜索按钮的宽度*/
   /*按钮颜色*/
@@ -157,11 +162,11 @@
   /*设置边框的圆角*/
   float: right;
 }
-#header > div.search > ul.input_box {
+#header > div.wrap > div.search > ul.input_box {
   display: block;
   zoom: 1;
 }
-#header > div.search > ul.input_box:after {
+#header > div.wrap > div.search > ul.input_box:after {
   content: "";
   display: block;
   clear: both;
@@ -169,10 +174,10 @@
   height: 0;
   visibility: hidden;
 }
-#header > div.search > ul.input_box li {
+#header > div.wrap > div.search > ul.input_box li {
   float: left;
 }
-#header > div.search > ul.input_box li > input {
+#header > div.wrap > div.search > ul.input_box li > input {
   width: 408px;
   height: 40px;
   display: inline-block;
@@ -180,12 +185,12 @@
   border: solid 2px #FF8286;
   border-radius: 5px 0 0 5px;
 }
-#header > div.search > ul.input_box li > input:focus {
+#header > div.wrap > div.search > ul.input_box li > input:focus {
   border-color: #FF1955;
   border-right-color: #FF8286;
   outline: none;
 }
-#header > div.search > ul.input_box li > a {
+#header > div.wrap > div.search > ul.input_box li > a {
   display: inline-block;
   width: 92px;
   height: 40px;
@@ -197,11 +202,11 @@
   border-radius: 0 5px 5px 0;
   background-color: #FF8286;
 }
-#header > div.search > ul.input_box li > a:hover {
+#header > div.wrap > div.search > ul.input_box li > a:hover {
   border-color: #FF1955;
   background-color: #FF1955;
 }
-#header > div.search > div.hot_word > ul {
+#header > div.wrap > div.search > div.hot_word > ul {
   display: block;
   zoom: 1;
   width: 408px;
@@ -209,7 +214,7 @@
   padding-top: 10px;
   margin-bottom: -10px;
 }
-#header > div.search > div.hot_word > ul:after {
+#header > div.wrap > div.search > div.hot_word > ul:after {
   content: "";
   display: block;
   clear: both;
@@ -217,21 +222,21 @@
   height: 0;
   visibility: hidden;
 }
-#header > div.search > div.hot_word > ul > li {
+#header > div.wrap > div.search > div.hot_word > ul > li {
   float: left;
   padding: 0 10px;
   border-right: solid 1px;
 }
-#header > div.search > div.hot_word > ul > li:last-child {
+#header > div.wrap > div.search > div.hot_word > ul > li:last-child {
   border-right: none;
 }
-#header > div.search > div.hot_word > ul > li > a {
+#header > div.wrap > div.search > div.hot_word > ul > li > a {
   color: #666;
 }
-#header > div.search > div.hot_word > ul > li > a:hover {
+#header > div.wrap > div.search > div.hot_word > ul > li > a:hover {
   color: #ff3b6d;
   text-decoration: underline;
 }
-#header > div.search > div.hot_word > ul > li .active {
+#header > div.wrap > div.search > div.hot_word > ul > li .active {
   color: #ff3b6d;
 }
