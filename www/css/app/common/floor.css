@@ -72,6 +72,14 @@ div#floor > div#floor_two_nav > div > ul:after {
   height: 0;
   visibility: hidden;
 }
+div#floor > div#floor_two_nav > div > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
 div#floor > div#floor_two_nav > div > ul > li {
   height: 22px;
   float: left;
@@ -85,4 +93,16 @@ div#floor > div#floor_two_nav > div > ul > li > a {
 div#floor > div#floor_two_nav > div > ul > li > a:hover {
   color: #fd2d63;
   text-decoration: underline;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }

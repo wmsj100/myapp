@@ -397,6 +397,32 @@ module.exports = function(app) {
                 }]
             }
         });
+
+        data.floor_one = [{
+            'big_one': 'img/model/floor_one/01_big.jpg',
+            'little_one': 'img/model/floor_one/01_little.jpg',
+            'info': '金伯爵婚礼主题酒店 五星级 绿野仙踪厅-晋阳店'
+        },{
+            'big_one': 'img/model/floor_one/02_big.jpg',
+            'little_one': 'img/model/floor_one/02_little.jpg',
+            'info': '金伯爵婚礼主题酒店 五星级 中国风-晋阳店'
+        },{
+            'big_one': 'img/model/floor_one/03_big.jpg',
+            'little_one': 'img/model/floor_one/03_little.jpg',
+            'info': '四星级三晋国际饭店 天长地久B套餐-4'
+        },{
+            'big_one': 'img/model/floor_one/04_big.jpg',
+            'little_one': 'img/model/floor_one/04_little.jpg',
+            'info': '四星级三晋国际饭店 金玉良缘A套餐-7'
+        },{
+            'big_one': 'img/model/floor_one/05_big.jpg',
+            'little_one': 'img/model/floor_one/05_little.jpg',
+            'info': '四星级三晋国际饭店 浪漫姻缘A套餐-11'
+        },{
+            'big_one': 'img/model/floor_one/06_big.jpg',
+            'little_one': 'img/model/floor_one/06_little.jpg',
+            'info': '山西阳光四星级大酒店'
+        }];
         
         res.render('index', data);
         // res.send(data);

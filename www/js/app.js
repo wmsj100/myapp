@@ -4,8 +4,7 @@ require.config({
         app: '../app',
         common: '../app/common',
         model: '../app/model',
-        page: '../app/page',
-        jquery: 'jquery'
+        page: '../app/page'
     }
 });
 
