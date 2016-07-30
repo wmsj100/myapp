@@ -35,6 +35,7 @@ http://requirejs.org/docs/api.html
 
 - div.change_city 切换城市 z-index: 20;
 - div#right_bar 右侧边栏 z-index: 30;
+- div.imgbox 手机图标二维码框 z-index: 40;
 - div.drop_tab 下拉菜单列表 z-index: 10;
 - div.img_box  下拉菜单的背景图片 z-index: 9;
 - div.carousel_top  轮播图片框 z-index: 1;   

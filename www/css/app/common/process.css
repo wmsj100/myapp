@@ -21,6 +21,7 @@ div#process > div.title {
   width: 336px;
   height: 46px;
   margin-bottom: 10px;
+  /* step */
   background: url(../img/common/sprite.png) 0px -299px no-repeat;
 }
 div#process > ul {
@@ -66,56 +67,64 @@ div#process > ul > li:nth-child(1) a {
   color: #fe9f21;
 }
 div#process > ul > li:nth-child(1) i {
-  background: url(../img/common/sprite.png) -428px -40px no-repeat;
+  /* arrow01 */
+  background: url(../img/common/sprite.png) -377px -40px no-repeat;
 }
 div#process > ul > li:nth-child(2) span,
 div#process > ul > li:nth-child(2) a {
   color: #fd6862;
 }
 div#process > ul > li:nth-child(2) i {
-  background: url(../img/common/sprite.png) -411px -40px no-repeat;
+  /* arrow02 */
+  background: url(../img/common/sprite.png) -462px -40px no-repeat;
 }
 div#process > ul > li:nth-child(3) span,
 div#process > ul > li:nth-child(3) a {
   color: #ff7fc0;
 }
 div#process > ul > li:nth-child(3) i {
-  background: url(../img/common/sprite.png) -377px -40px no-repeat;
+  /* arrow03 */
+  background: url(../img/common/sprite.png) -445px -40px no-repeat;
 }
 div#process > ul > li:nth-child(4) span,
 div#process > ul > li:nth-child(4) a {
   color: #4dc7ee;
 }
 div#process > ul > li:nth-child(4) i {
-  background: url(../img/common/sprite.png) -445px -40px no-repeat;
+  /* arrow04 */
+  background: url(../img/common/sprite.png) -360px -40px no-repeat;
 }
 div#process > ul > li:nth-child(5) span,
 div#process > ul > li:nth-child(5) a {
   color: #eb6647;
 }
 div#process > ul > li:nth-child(5) i {
-  background: url(../img/common/sprite.png) -360px -40px no-repeat;
+  /* arrow05 */
+  background: url(../img/common/sprite.png) -428px -40px no-repeat;
 }
 div#process > ul > li:nth-child(6) span,
 div#process > ul > li:nth-child(6) a {
   color: #f8c423;
 }
 div#process > ul > li:nth-child(6) i {
-  background: url(../img/common/sprite.png) -462px -40px no-repeat;
+  /* arrow06 */
+  background: url(../img/common/sprite.png) -360px -40px no-repeat;
 }
 div#process > ul > li:nth-child(7) span,
 div#process > ul > li:nth-child(7) a {
   color: #8692f8;
 }
 div#process > ul > li:nth-child(7) i {
-  background: url(../img/common/sprite.png) -360px -40px no-repeat;
+  /* arrow07 */
+  background: url(../img/common/sprite.png) -394px -40px no-repeat;
 }
 div#process > ul > li:nth-child(8) span,
 div#process > ul > li:nth-child(8) a {
   color: #eb6647;
 }
 div#process > ul > li:nth-child(8) i {
-  background: url(../img/common/sprite.png) -394px -40px no-repeat;
+  /* arrow08 */
+  background: url(../img/common/sprite.png) -411px -40px no-repeat;
 }
 div#process > ul > li > i {
   display: block;

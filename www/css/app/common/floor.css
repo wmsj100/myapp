@@ -37,4 +37,27 @@ div#floor > div#floor_two_nav > i {
   display: block;
   width: 120px;
   height: 80px;
+  background: url(../img/common/sprite.png) -120px 0px no-repeat;
+}
+div#floor > div#floor_two_nav > div > ul {
+  display: block;
+  zoom: 1;
+}
+div#floor > div#floor_two_nav > div > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+div#floor > div#floor_two_nav > div > ul > li {
+  float: left;
+}
+div#floor > div#floor_two_nav > div > ul > li > a {
+  color: #666;
+}
+div#floor > div#floor_two_nav > div > ul > li > a:hover {
+  color: #fd2d63;
+  text-decoration: underline;
 }

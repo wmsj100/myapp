@@ -135,37 +135,38 @@ div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:hover > i.arror {
   display: block;
   float: right;
   margin-right: 10px;
-  background: url(../img/common/sprite.png) -441px -174px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(1) > i.icon {
-  background: url(../img/common/sprite.png) -465px -116px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(1):hover > i.icon {
-  background: url(../img/common/sprite.png) -380px -217px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(2) > i.icon {
-  background: url(../img/common/sprite.png) -461px -151px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(2):hover > i.icon {
-  background: url(../img/common/sprite.png) -400px -217px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(3) > i.icon {
-  background: url(../img/common/sprite.png) -461px -174px no-repeat;
-}
-div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(3):hover > i.icon {
+  /* right */
   background: url(../img/common/sprite.png) -420px -217px no-repeat;
 }
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(1) > i.icon {
+  background: url(../img/common/sprite.png) -460px -217px no-repeat;
+}
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(1):hover > i.icon {
+  background: url(../img/common/sprite.png) -441px -151px no-repeat;
+}
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(2) > i.icon {
+  background: url(../img/common/sprite.png) -380px -237px no-repeat;
+}
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(2):hover > i.icon {
+  background: url(../img/common/sprite.png) -465px -116px no-repeat;
+}
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(3) > i.icon {
+  background: url(../img/common/sprite.png) -380px -217px no-repeat;
+}
+div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(3):hover > i.icon {
+  background: url(../img/common/sprite.png) -400px -217px no-repeat;
+}
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(4) > i.icon {
-  background: url(../img/common/sprite.png) -380px -197px no-repeat;
+  background: url(../img/common/sprite.png) -460px -197px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(4):hover > i.icon {
-  background: url(../img/common/sprite.png) -440px -217px no-repeat;
+  background: url(../img/common/sprite.png) -441px -174px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(5) > i.icon {
   background: url(../img/common/sprite.png) -420px -197px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(5):hover > i.icon {
-  background: url(../img/common/sprite.png) -460px -217px no-repeat;
+  background: url(../img/common/sprite.png) -360px -197px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(6) > i.icon {
   background: url(../img/common/sprite.png) -440px -237px no-repeat;
@@ -174,16 +175,16 @@ div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(6):hove
   background: url(../img/common/sprite.png) -420px -237px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(7) > i.icon {
-  background: url(../img/common/sprite.png) -460px -197px no-repeat;
+  background: url(../img/common/sprite.png) -400px -197px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(7):hover > i.icon {
-  background: url(../img/common/sprite.png) -380px -237px no-repeat;
+  background: url(../img/common/sprite.png) -461px -151px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(8) > i.icon {
-  background: url(../img/common/sprite.png) -360px -217px no-repeat;
+  background: url(../img/common/sprite.png) -380px -197px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li:nth-child(8):hover > i.icon {
-  background: url(../img/common/sprite.png) -400px -237px no-repeat;
+  background: url(../img/common/sprite.png) -461px -174px no-repeat;
 }
 div#nav_bar > div.wrap > div.drop_nav > div.drop_tab > ul > li > ul.tab_right_box {
   display: none;

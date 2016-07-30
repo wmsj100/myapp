@@ -17,6 +17,29 @@ div#floor {
             display: block;
             width: 120px;
             height: 80px;
+            background: url(../img/common/sprite.png) -120px -0px no-repeat;
+       }
+
+       &>div{
+            &>h3{
+
+            }
+            &>ul{
+                .clearfix;
+                &>li{
+                    float: left;
+                    &>a{
+                        color: #666;
+                        &:hover{
+                            color: #fd2d63;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+       }
+       &>div.theme{
+
        }
     }
 }

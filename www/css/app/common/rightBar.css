@@ -46,9 +46,11 @@ div#right_bar > ul > li {
 }
 div#right_bar > ul > li:nth-child(1) {
   position: relative;
-  background: url(../img/common/sprite.png) -412px -78px no-repeat;
+  /* QQ2  */
+  background: url(../img/common/sprite.png) -395px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1):hover {
+  /* QQ1 */
   background: url(../img/common/sprite.png) -430px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab {
@@ -70,6 +72,7 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_logo {
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_logo > a.logo {
   display: block;
   height: 40px;
+  /* logo_rightbar */
   background: url(../img/common/sprite.png) -360px 0px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_cont {
@@ -100,6 +103,7 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_cont > ul > li > a > 
   right: 0;
   height: 23px;
   width: 81px;
+  /* service_btn */
   background: url(../img/common/sprite.png) -360px -174px no-repeat;
 }
 div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_foot {
@@ -111,10 +115,12 @@ div#right_bar > ul > li:nth-child(1) div.qq_tab div.qq_tab_foot > h3 {
 }
 div#right_bar > ul > li:nth-child(2) {
   position: relative;
-  background: url(../img/common/sprite.png) -395px -116px no-repeat;
+  /* erweima01 */
+  background: url(../img/common/sprite.png) -412px -78px no-repeat;
 }
 div#right_bar > ul > li:nth-child(2):hover {
-  background: url(../img/common/sprite.png) -360px -116px no-repeat;
+  /* erweima02 */
+  background: url(../img/common/sprite.png) -377px -78px no-repeat;
 }
 div#right_bar > ul > li:nth-child(2) div.qr_code_img {
   width: 110px;
@@ -129,8 +135,10 @@ div#right_bar > ul > li:nth-child(2) div.qr_code_img {
 }
 div#right_bar > ul > li:nth-child(3) {
   cursor: pointer;
-  background: url(../img/common/sprite.png) -377px -78px no-repeat;
+  /* TOP_01 */
+  background: url(../img/common/sprite.png) -360px -116px no-repeat;
 }
 div#right_bar > ul > li:nth-child(3):hover {
+  /* TOP_02 */
   background: url(../img/common/sprite.png) -447px -78px no-repeat;
 }

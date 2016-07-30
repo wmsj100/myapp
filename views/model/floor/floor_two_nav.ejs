@@ -1,23 +1,15 @@
 <div id="floor_two_nav">
     <i></i>
-    <div class="star">
-        <h3>星级酒店</h3>
+    <% floor['nav']['count'].forEach(function(item){ %>
+        <div class="list_wrap">
+        <h3><%- item['name'] %></h3>
         <ul>
-            <% floor['nav']['star'].forEach(function(item){ %>
+            <% item['info'].forEach(function(data){ %>
                 <li>
-                <a href="<%- item['url'] %>"><%- item['name'] %></a>
+                <a href="<%- data['url'] %>"><%- data['name'] %></a>
                 </li>
             <% }) %>
         </ul>
     </div>
-    <div class="theme">
-        <h3>主题酒店</h3>
-        <ul>
-            <% floor['nav']['theme'].forEach(function(item){ %>
-                <li>
-                <a href="<%- item['url'] %>"><%- item['name'] %></a>
-                </li>
-            <% }) %>
-        </ul>
-    </div>
+    <% }) %>
 </div>

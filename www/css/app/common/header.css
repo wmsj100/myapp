@@ -55,6 +55,7 @@
   display: block;
   width: 190px;
   height: 59px;
+  /* logo */
   background: url(../img/common/sprite.png) 0px -240px no-repeat;
 }
 #header > div.wrap > div.city {

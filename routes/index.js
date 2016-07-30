@@ -388,13 +388,12 @@ module.exports = function(app) {
                 'span': 'WEDDING BANQUET'
             },
             'nav': {
-                'star|3-8': [{
+                'count|1-3': [{
                     'name': '@cword(4)',
-                    'url': '@url("https", "huntaotao")'
-                }],
-                'theme|3-8': [{
-                    'name': '@cword(4)',
-                    'url': '@url("https", "huntaotao")'
+                    'info|3-8': [{
+                        'name': '@cword(4)',
+                        'url': '@url("https", "huntaotao")'
+                    }]
                 }]
             }
         });
