@@ -12,24 +12,46 @@
 }
 div#floor {
     &>div#floor_two_nav {
+        height: 80px;
+        color: #666;
+        padding: 20px 10px;
+        padding-left: 120px + 10px;
        background-color: #fff;
+       position: relative;
        &>i{
             display: block;
             width: 120px;
             height: 80px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
             background: url(../img/common/sprite.png) -120px -0px no-repeat;
        }
 
        &>div{
+            width: 280px;
+            margin-left: 60px;
+            float: left;
             &>h3{
-
+                color: #333;
+                height: 30px;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 30px;
+                margin-left: 10px;
             }
             &>ul{
                 .clearfix;
                 &>li{
+                    height: 22px;
                     float: left;
+
                     &>a{
-                        color: #666;
+                        
+                        color: #999;
+                        display: inline-block;
+                        padding: 0 10px;
+                        border-right: solid 1px #999;
                         &:hover{
                             color: #fd2d63;
                             text-decoration: underline;
@@ -37,9 +59,6 @@ div#floor {
                     }
                 }
             }
-       }
-       &>div.theme{
-
        }
     }
 }

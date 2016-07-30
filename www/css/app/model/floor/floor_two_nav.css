@@ -11,13 +11,34 @@
   visibility: hidden;
 }
 div#floor > div#floor_two_nav {
+  height: 80px;
+  color: #666;
+  padding: 20px 10px;
+  padding-left: 130px;
   background-color: #fff;
+  position: relative;
 }
 div#floor > div#floor_two_nav > i {
   display: block;
   width: 120px;
   height: 80px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
   background: url(../img/common/sprite.png) -120px 0px no-repeat;
+}
+div#floor > div#floor_two_nav > div {
+  width: 280px;
+  margin-left: 60px;
+  float: left;
+}
+div#floor > div#floor_two_nav > div > h3 {
+  color: #333;
+  height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-left: 10px;
 }
 div#floor > div#floor_two_nav > div > ul {
   display: block;
@@ -32,10 +53,14 @@ div#floor > div#floor_two_nav > div > ul:after {
   visibility: hidden;
 }
 div#floor > div#floor_two_nav > div > ul > li {
+  height: 22px;
   float: left;
 }
 div#floor > div#floor_two_nav > div > ul > li > a {
-  color: #666;
+  color: #999;
+  display: inline-block;
+  padding: 0 10px;
+  border-right: solid 1px #999;
 }
 div#floor > div#floor_two_nav > div > ul > li > a:hover {
   color: #fd2d63;
