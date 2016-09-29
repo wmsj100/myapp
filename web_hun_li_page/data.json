@@ -1,0 +1,54 @@
+{
+	"status": 0,
+	"count": 4,
+	"data": [
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"],
+		["./img/web_pic.png", "./img/table_big.png"]
+	],
+	"comments":[
+		{
+			"name": "欧阳丹",
+			"img": "./img/layer10_userIcon.png",
+			"date": "2016-06-23",
+			"info": "普通人的婚礼，传统也讲究，不那么困难，但也没有很富裕！传统的父母按照传统的方式来，迎亲行礼办酒！说到最后就是花钱花时间花心思！好不容易找到个知心人，才发现那结婚就好比房价，一年几涨！想要一个自己的婚礼，但费用总是让人头疼！虽然说就是那么一天，但却是很重要的一天。"
+		},{
+			"name": "欧阳丹",
+			"img": "./img/layer10_userIcon.png",
+			"date": "2016-06-23",
+			"info": "普通人的婚礼，传统也讲究，不那么困难，但也没有很富裕！传统的父母按照传统的方式来，迎亲行礼办酒！说到最后就是花钱花时间花心思！好不容易找到个知心人，才发现那结婚就好比房价，一年几涨！想要一个自己的婚礼，但费用总是让人头疼！虽然说就是那么一天，但却是很重要的一天。"
+		}
+	],
+	"recommend":[
+		{"name": "酒店",
+		"img": "./img/layer11_jiudian.png"},
+		{"name": "钻戒",
+		"img": "./img/layer11_zuanjie.png"},
+		{"name": "婚照",
+		"img": "./img/layer11_hunzhao.png"},
+		{"name": "婚礼",
+		"img": "./img/layer11_hunli.png"},
+		{"name": "婚纱",
+		"img": "./img/layer11_hunsha.png"},
+		{"name": "摄影",
+		"img": "./img/layer11_sheying.png"}
+	],
+	"price": [
+		{	"name": "套餐价:",
+			"price": "￥60,000.00"},
+		{	"name": "省",
+			"price": "￥20,000.00"},
+		{	"name": "价格:",
+			"price": "￥80,000.00"}
+	]
+}
+

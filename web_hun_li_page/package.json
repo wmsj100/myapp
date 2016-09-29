@@ -1,0 +1,11 @@
+{
+  "name": "0904",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -a 127.0.0.1 -p 7070"
+  },
+  "author": "",
+  "license": "ISC"
+}
